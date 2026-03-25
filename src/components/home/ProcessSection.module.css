@@ -1,0 +1,16 @@
+.process { padding: 8.5rem 0; background: var(--surface-container-low); }
+
+.title { margin-bottom: 3rem; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+
+.card { background: var(--surface-container); border-radius: var(--radius-xl); padding: 2.5rem; transition: all 0.3s ease; border: 1px solid transparent; }
+.card:hover { background: var(--surface-container-high); transform: translateY(-4px); }
+
+.number { font-family: var(--font-display); font-size: 3rem; font-weight: 800; color: var(--primary); opacity: 0.9; line-height: 1; display: block; margin-bottom: 1.25rem; }
+
+.stepTitle { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--on-surface); margin-bottom: 0.75rem; }
+
+.stepDesc { font-size: 0.875rem; color: var(--on-surface-muted); line-height: 1.7; }
+
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .process { padding: 5rem 0; } }

@@ -1,0 +1,14 @@
+.section { background: var(--surface-container-low); }
+.title { margin-bottom: 0.75rem; }
+.subtitle { color: var(--on-surface-muted); font-size: 1.05rem; max-width: 520px; margin-bottom: 3rem; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+.card { background: var(--surface-container-high); border-radius: var(--radius-xl); padding: 1.5rem; transition: all 0.3s; }
+.card:hover { background: var(--surface-container-highest); transform: translateY(-3px); }
+.cardTop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.icon { color: var(--secondary); }
+.count { font-size: 0.7rem; font-weight: 600; color: var(--primary); letter-spacing: 0.05em; }
+.cardTitle { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--on-surface); margin-bottom: 0.4rem; }
+.cardDesc { font-size: 0.8rem; color: var(--on-surface-muted); line-height: 1.5; }
+
+@media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }

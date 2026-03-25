@@ -1,0 +1,35 @@
+.page { padding-top: 6rem; }
+
+.hero { padding: 6rem 0; }
+.heroTitle { margin-bottom: 1.5rem; }
+.heroSubtext { font-size: 1.125rem; color: var(--on-surface-muted); max-width: 600px; line-height: 1.7; }
+
+.statsSection { padding: 4rem 0; background: var(--surface-container-low); }
+.statsGrid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.5rem; }
+.statCard { text-align: center; padding: 1.5rem; }
+.statValue { font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; color: var(--primary); display: block; }
+.statLabel { font-size: 0.8rem; color: var(--on-surface-muted); font-weight: 500; }
+
+.valuesSection { padding: 6rem 0; }
+.valuesSection h2 { margin-bottom: 2.5rem; }
+.valuesGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.valueCard { background: var(--surface-container-high); border-radius: var(--radius-xl); padding: 2rem; transition: all 0.3s; }
+.valueCard:hover { background: var(--surface-container-highest); transform: translateY(-3px); }
+.valueIcon { color: var(--secondary); margin-bottom: 1rem; }
+.valueCard h3 { font-size: 1.1rem; font-weight: 700; color: var(--on-surface); margin-bottom: 0.5rem; }
+.valueCard p { font-size: 0.875rem; color: var(--on-surface-muted); line-height: 1.7; }
+
+.teamSection { padding: 6rem 0; background: var(--surface-container-low); }
+.teamSection h2 { margin-bottom: 2.5rem; }
+.teamGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.teamCard { background: var(--surface-container); border-radius: var(--radius-xl); padding: 2rem; text-align: center; transition: all 0.3s; }
+.teamCard:hover { background: var(--surface-container-high); transform: translateY(-3px); }
+.teamAvatar { width: 60px; height: 60px; border-radius: var(--radius-full); background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; color: var(--on-primary); margin: 0 auto 1rem; }
+.teamCard h3 { font-size: 1.1rem; font-weight: 700; color: var(--on-surface); }
+.teamRole { font-size: 0.8rem; color: var(--secondary); font-weight: 600; display: block; margin: 0.25rem 0 0.75rem; }
+.teamCard p { font-size: 0.85rem; color: var(--on-surface-muted); line-height: 1.6; }
+
+.cta { padding: 6rem 0; }
+
+@media (max-width: 1024px) { .statsGrid { grid-template-columns: repeat(3, 1fr); } .valuesGrid, .teamGrid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .statsGrid { grid-template-columns: repeat(2, 1fr); } .valuesGrid, .teamGrid { grid-template-columns: 1fr; } }

@@ -1,0 +1,122 @@
+.visualContainer {
+  width: 100%;
+  max-width: 540px;
+  height: 380px;
+  position: relative;
+  background: var(--surface-container-low);
+  border: 1px solid var(--outline-ghost);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SEO: Ranking Elevator */
+.seoElevator {
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.rankRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.875rem 1.25rem;
+  background: var(--surface-container-high);
+  border-left: 4px solid var(--outline-ghost);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-base);
+}
+.rankRow:hover {
+  background: var(--surface-container-highest);
+  border-left-color: var(--secondary);
+  transform: translateX(5px);
+}
+.kw { font-weight: 600; font-size: 0.9375rem; flex: 1; color: var(--on-surface); }
+.pos { font-family: var(--font-display); font-weight: 800; color: var(--primary); font-size: 1.125rem; }
+
+/* Paid Ads: ROI Rocket */
+.roiRocket { width: 100%; height: 100%; position: relative; }
+.centerCore {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, rgba(247, 190, 29, 0.2) 0%, transparent 70%);
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  backdrop-filter: blur(10px);
+}
+.networkIcon { position: absolute; font-size: 2.5rem; filter: drop-shadow(0 0 10px currentColor); }
+
+/* Social: Engagement Cloud */
+.socialCloud { width: 100%; height: 100%; position: relative; }
+.floatingIcon { position: absolute; opacity: 0.8; filter: drop-shadow(0 0 5px currentColor); }
+
+/* Web Dev: Speed Assembly */
+.webAssembly { width: 100%; padding: 2.5rem; }
+.skeleton { background: var(--surface-container-highest); border-radius: var(--radius-full); }
+.speedDial {
+  width: 160px;
+  height: 160px;
+  border: 10px solid var(--surface-container-high);
+  border-top-color: var(--secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(78, 222, 163, 0.2);
+}
+
+/* App Dev: Phone Frame */
+.phoneFrame {
+  width: 190px;
+  height: 380px;
+  border: 12px solid #1a1f2e;
+  border-radius: 40px;
+  background: #060e20;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 50px 100px rgba(0,0,0,0.8);
+}
+.phoneScreen { width: 100%; height: 100%; padding: 1.5rem 1rem; color: var(--on-surface); }
+
+/* AI: Node Brain */
+.aiBrain { width: 100%; height: 100%; position: relative; }
+.node { width: 14px; height: 14px; border-radius: 50%; position: absolute; background: var(--secondary); box-shadow: 0 0 15px var(--secondary); }
+.connection { position: absolute; background: linear-gradient(90deg, var(--secondary), transparent); height: 2px; transform-origin: left center; opacity: 0.3; }
+
+/* Generic floating badges */
+.floatingBadge {
+  position: absolute;
+  padding: 0.625rem 1.25rem;
+  background: var(--surface-container-highest);
+  border: 1px solid var(--outline-ghost);
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--on-surface);
+}
+
+@media (max-width: 640px) {
+  .visualContainer { height: 320px; }
+  .phoneFrame { width: 160px; height: 320px; }
+  .speedDial { width: 130px; height: 130px; }
+  .seoElevator { padding: 1.5rem; }
+}

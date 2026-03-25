@@ -1,0 +1,60 @@
+import type { ServicePageData } from "@/types/services";
+
+export const paidAdsData: ServicePageData = {
+  slug: "paid-ads", name: "Paid Ads", tagline: "PPC & Performance Marketing",
+  heroHeadline: "Every Rupee Tracked.\nEvery Click Optimized.",
+  heroSubtext: "Google Ads, Meta Ads, LinkedIn Campaigns, YouTube Ads, Programmatic Display — we build paid acquisition engines that scale profitably while your competitors burn budget.",
+  heroVisualDesc: "Real-time ROAS dashboard showing campaign metrics, conversion funnels, and budget allocation.",
+  primaryCTA: "Get Free PPC Audit", secondaryCTA: "See PPC Results", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
+  pullQuote: "You are spending on ads. But are you investing — or gambling?",
+  problemText: "Most businesses waste 40-60% of their ad spend on irrelevant clicks, wrong audiences, and campaigns nobody is monitoring properly. The problem is not budget — it is strategy, tracking, and relentless optimization. Without a system, paid ads are just expensive noise.",
+  sectionLabel: "THE PAID ADS DEPARTMENT", sectionTitle: "Performance Marketing That Actually Performs.",
+  capabilities: [
+    { title: "Search Advertising", desc: "Google Ads, Bing Ads — high-intent keyword targeting that captures demand the moment it happens." },
+    { title: "Social Advertising", desc: "Meta, LinkedIn, Twitter/X ads — awareness, engagement, and conversion campaigns for every funnel stage." },
+    { title: "Display & Programmatic", desc: "GDN, DV360, programmatic networks — retargeting, lookalikes, and brand awareness at scale." },
+    { title: "Video Advertising", desc: "YouTube Ads, Connected TV — video campaigns that drive awareness and measurable conversions." },
+    { title: "Shopping & E-Commerce Ads", desc: "Google Shopping, Meta Catalog — product-level bidding and feed optimization for maximum ROAS." },
+  ],
+  subServices: [
+    { name: "Google Ads Management", slug: "google-ads", desc: "Search, Display, Shopping, YouTube — full Google Ads management." },
+    { name: "Meta Ads (Facebook & Instagram)", slug: "meta-ads", desc: "Full-funnel social advertising across Meta platforms." },
+    { name: "LinkedIn Advertising", slug: "linkedin-ads", desc: "B2B lead generation and account-based marketing." },
+    { name: "YouTube Ads", slug: "youtube-ads", desc: "Video advertising for awareness and direct response." },
+    { name: "Google Shopping Ads", slug: "shopping-ads", desc: "Product feed optimization and Shopping campaign management." },
+    { name: "Retargeting & Remarketing", slug: "retargeting", desc: "Multi-platform retargeting to recover lost conversions." },
+    { name: "Programmatic Display", slug: "programmatic-display", desc: "Automated media buying across premium inventory." },
+    { name: "Landing Page Optimization", slug: "landing-page-optimization", desc: "CRO-focused landing pages that maximize ad ROI." },
+    { name: "PPC Audit & Strategy", slug: "ppc-audit", desc: "Comprehensive paid media audit with actionable roadmap." },
+    { name: "Performance Creative", slug: "performance-creative", desc: "Ad creatives designed for clicks, not just aesthetics." },
+  ],
+  processSteps: [
+    { number: "01", title: "Audit & Analysis", desc: "Complete ad account audit, competitor analysis, and opportunity mapping." },
+    { number: "02", title: "Strategy & Architecture", desc: "Campaign structure, audience strategy, bidding models, and creative direction." },
+    { number: "03", title: "Launch & Test", desc: "Deploy campaigns with A/B testing frameworks for ads, audiences, and landing pages." },
+    { number: "04", title: "Optimize & Scale", desc: "Daily bid management, weekly optimizations, monthly strategic reviews." },
+  ],
+  caseStudies: [
+    { industry: "SAAS", client: "HR Tech Platform", result: "-62% Cost Per Lead", metrics: ["3.2x lead volume increase", "ROAS improved from 1.8x to 5.4x", "Pipeline value ₹4.2Cr"], timeframe: "6 months" },
+    { industry: "E-COMMERCE", client: "D2C Fashion Brand", result: "8.7x ROAS", metrics: ["₹12L monthly revenue from ads", "CPA reduced from ₹890 to ₹340", "40% repeat purchase rate"], timeframe: "4 months" },
+  ],
+  clientProfiles: [
+    { label: "Profile 1", desc: "You are running ads but your CPA keeps climbing and you cannot figure out why conversions are dropping." },
+    { label: "Profile 2", desc: "You tried Google Ads or Meta Ads yourself but the complexity is overwhelming and you are wasting budget." },
+    { label: "Profile 3", desc: "You need to scale ad spend from ₹1L to ₹10L per month profitably — without breaking what already works." },
+  ],
+  tools: ["Google Ads", "Meta Business Suite", "LinkedIn Campaign Manager", "Google Analytics 4", "Google Tag Manager", "Unbounce", "VWO", "Hotjar", "Supermetrics", "Data Studio"],
+  faqs: [
+    { question: "What is your minimum ad spend requirement?", answer: "We recommend a minimum of ₹50,000/month in ad spend for meaningful data and results. Our management fees are separate." },
+    { question: "How quickly will I see results from paid ads?", answer: "Unlike SEO, paid ads can drive traffic within 24 hours. However, optimization for peak performance typically takes 2-4 weeks of data collection." },
+    { question: "Do you manage the creative or just the campaigns?", answer: "Both. We have in-house creative teams for ad copy, static images, video ads, and landing page design." },
+    { question: "Can you work with my existing Google Ads account?", answer: "Absolutely. We start with an audit of your existing setup and optimize from there — no need to start from scratch." },
+  ],
+  relatedServices: [
+    { name: "SEO", href: "/services/seo", desc: "Combine paid and organic for full SERP domination." },
+    { name: "Lead Generation", href: "/services/lead-generation", desc: "Turn your ad traffic into qualified pipeline." },
+    { name: "Web Development", href: "/services/web-development", desc: "Landing pages that convert your ad clicks." },
+  ],
+  ctaHeadline: "Stop Wasting Ad Spend. Start Engineering ROI.",
+  ctaSubtext: "Get a free PPC audit — we will show you exactly where your budget is being wasted and how to fix it.",
+};
