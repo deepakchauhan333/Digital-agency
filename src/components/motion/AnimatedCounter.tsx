@@ -1,6 +1,5 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
@@ -19,16 +18,11 @@ export default function AnimatedCounter({
   duration = 2.5,
   decimals = 0,
 }: Props) {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
-  const [hasStarted, setHasStarted] = useState(false);
-
-  useEffect(() => {
-    if (inView) setHasStarted(true);
-  }, [inView]);
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
     <span ref={ref}>
-      {hasStarted ? (
+      {inView ? (
         <CountUp
           start={0}
           end={end}

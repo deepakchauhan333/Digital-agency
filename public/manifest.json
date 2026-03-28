@@ -1,0 +1,27 @@
+{
+  "name": "All India Marketing Solution",
+  "short_name": "AIMS",
+  "description": "India's #1 Digital Marketing Agency — SEO, PPC, Social Media, Web & App Development, AI Automation, Lead Generation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1326",
+  "theme_color": "#f7be1d",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "marketing"],
+  "lang": "en",
+  "dir": "ltr"
+}

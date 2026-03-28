@@ -5,7 +5,7 @@ import { webDevData } from "@/data/web-development";
 export const metadata: Metadata = {
   title: "Web Development — Sites That Convert, Not Just Look Good",
   description: "Custom websites, e-commerce platforms, web apps, WordPress, Shopify — engineered for speed, SEO, and conversions. Next.js, React experts. Avg +180% conversion improvement.",
-  alternates: { canonical: "/services/web-development" },
+  alternates: { canonical: "https://www.allindiamarketingsolution.com/services/web-development" },
   keywords: [
     "web development company India", "custom website design", "e-commerce development",
     "WordPress development", "Shopify development", "React development",
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     "SaaS development", "full stack development", "website maintenance",
   ],
   openGraph: {
-    title: "Web Development — High-Performance Websites | Growthpedia",
+    title: "Web Development — High-Performance Websites | All India Marketing Solution",
     description: "Custom websites, e-commerce, web apps. Next.js, React, WordPress, Shopify. Avg +180% conversion improvement.",
-    url: "https://growthpedia.in/services/web-development",
+    url: "https://www.allindiamarketingsolution.com/services/web-development",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Growthpedia Web Development Services" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "All India Marketing Solution Web Development Services" }],
   },
 };
 

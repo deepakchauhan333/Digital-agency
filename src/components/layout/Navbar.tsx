@@ -46,15 +46,12 @@ export default function Navbar() {
       >
         <div className={styles.inner}>
           <Link href="/" className={styles.logo}>
-            <div className={styles.logoIcon}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 11.4477 21.5523 11 21 11H12C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13H19.9381C19.446 17.0537 15.9963 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C14.2506 4 16.2935 4.9317 17.7568 6.43807C18.1408 6.83333 18.7738 6.8406 19.1691 6.45663C19.5643 6.07267 19.5716 5.43973 19.1876 5.04447C17.3512 3.15347 14.8129 2 12 2Z" fill="var(--primary)" />
-              </svg>
-            </div>
-            <div className={styles.logoText}>
-              <span className={styles.logoMain}>GROWTHPEDIA</span>
-              <span className={styles.logoSub}>AGENCY</span>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
+              src="/logo.png" 
+              alt="All India Marketing Solution" 
+              className={styles.logoImage}
+            />
           </Link>
 
           <div className={styles.navLinks}>

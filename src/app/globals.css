@@ -1,8 +1,9 @@
 /* ============================================
-   GROWTHPEDIA AGENCY — "The Digital Curator"
-   Design System v1.0
+   ALL INDIA MARKETING SOLUTION — "The Digital Curator"
+   Design System v2.0 — 2026 SEO + Performance Optimized
    ============================================ */
 
+/* Font loading with display=swap for 0 CLS (Cumulative Layout Shift) */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* ------ CSS Custom Properties (Design Tokens) ------ */
@@ -445,3 +446,47 @@ img {
 .h-20 { height: 5rem; }
 .w-32 { width: 8rem; }
 .h-32 { height: 8rem; }
+
+/* ------ Accessibility — Skip to Content ------ */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: var(--on-primary);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  z-index: 9999;
+  transition: top 0.2s;
+}
+.skip-to-content:focus {
+  top: 1rem;
+}
+
+/* ------ Focus Visible — Keyboard Navigation ------ */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ------ Reduced Motion — Accessibility ------ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------ Print Styles ------ */
+@media print {
+  nav, footer, .btn, .back-to-top { display: none !important; }
+  body { color: #000; background: #fff; }
+  a { text-decoration: underline; }
+  a::after { content: " (" attr(href) ")"; font-size: 0.8em; }
+}
+

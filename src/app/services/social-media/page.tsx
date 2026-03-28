@@ -5,7 +5,7 @@ import { socialMediaData } from "@/data/social-media";
 export const metadata: Metadata = {
   title: "Social Media Marketing — Build Audiences That Buy",
   description: "Instagram marketing, LinkedIn thought leadership, YouTube management, influencer partnerships, content creation — we turn social platforms into revenue channels. Get free social audit.",
-  alternates: { canonical: "/services/social-media" },
+  alternates: { canonical: "https://www.allindiamarketingsolution.com/services/social-media" },
   keywords: [
     "social media marketing agency", "Instagram marketing India", "LinkedIn marketing B2B",
     "YouTube channel management", "influencer marketing agency", "content creation services",
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     "brand awareness campaigns", "social media advertising", "UGC content",
   ],
   openGraph: {
-    title: "Social Media Marketing — Build Audiences That Buy | Growthpedia",
+    title: "Social Media Marketing — Build Audiences That Buy | All India Marketing Solution",
     description: "Instagram, LinkedIn, YouTube, influencer marketing. +340% avg engagement growth. 80+ specialists.",
-    url: "https://growthpedia.in/services/social-media",
+    url: "https://www.allindiamarketingsolution.com/services/social-media",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Growthpedia Social Media Marketing Agency" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "All India Marketing Solution Social Media Marketing Agency" }],
   },
 };
 

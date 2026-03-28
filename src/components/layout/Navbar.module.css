@@ -6,14 +6,17 @@
   z-index: 1000;
   padding: 1.25rem 0;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #171f33;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 }
 
 .navbar.scrolled {
-  background: rgba(23, 31, 51, 0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(218, 226, 253, 0.08);
-  padding: 0.75rem 0;
+  background: #171f33; /* Fully opaque background */
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border-bottom: 1px solid rgba(218, 226, 253, 0.15);
+  padding: 0.5rem 0; /* Slightly tighter padding when scrolled */
 }
 
 .inner {
@@ -33,37 +36,19 @@
   line-height: 1;
 }
 
-.logoIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: rgba(247, 190, 29, 0.1);
-  border-radius: 8px;
-  border: 1px solid rgba(247, 190, 29, 0.2);
+.logoImage {
+  width: 120px;
+  height: auto;
+  min-height: 30px;
+  display: block;
+  object-fit: contain;
 }
 
-.logoText {
-  display: flex;
-  flex-direction: column;
-}
-
-.logoMain {
-  font-family: var(--font-display);
-  font-size: 1.125rem;
-  font-weight: 800;
-  color: var(--on-surface);
-  letter-spacing: 0.05em;
-}
-
-.logoSub {
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--secondary);
-  letter-spacing: 0.3em;
-  margin-top: -0.125rem;
+@media (max-width: 640px) {
+  .logoImage {
+    width: 100px;
+    min-height: 25px;
+  }
 }
 
 .navLinks {
@@ -74,8 +59,8 @@
 
 .navLink {
   font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 1rem; /* Matched to the logo's visual weight */
+  font-weight: 600; /* Semibold for better visibility */
   color: var(--on-surface-variant);
   text-decoration: none;
   transition: color 0.15s ease;

@@ -17,7 +17,9 @@ const company = [
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },
   { name: "Privacy", href: "/privacy" },
+  { name: "Terms", href: "/terms" },
   { name: "Contact", href: "/contact" },
+  { name: "Sitemap", href: "/sitemap-html" },
 ];
 
 export default function Footer() {
@@ -27,8 +29,12 @@ export default function Footer() {
         {/* Brand Column */}
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <span className={styles.logoMain}>GROWTHPEDIA</span>
-            <span className={styles.logoSub}>AGENCY</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
+              src="/logo.png" 
+              alt="All India Marketing Solution" 
+              className={styles.footerLogo}
+            />
           </div>
           <p className={styles.brandDesc}>
             India&apos;s most trusted digital growth agency. We engineer visibility, 
@@ -75,7 +81,7 @@ export default function Footer() {
         <div className={styles.column}>
           <h4 className={styles.columnTitle}>Get In Touch</h4>
           <ul className={styles.columnList}>
-            <li><a href="mailto:hello@growthpedia.in">hello@growthpedia.in</a></li>
+            <li><a href="mailto:hello@allindiamarketingsolution.com">hello@allindiamarketingsolution.com</a></li>
             <li><a href="tel:+919876543210">+91 98765 43210</a></li>
             <li>New Delhi, India</li>
           </ul>
@@ -87,7 +93,7 @@ export default function Footer() {
 
       <div className={styles.bottom}>
         <div className={styles.bottomInner}>
-          <p>© 2026 Growthpedia Agency. All rights reserved.</p>
+          <p>© 2026 All India Marketing Solution. All rights reserved.</p>
           <div className={styles.bottomLinks}>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>

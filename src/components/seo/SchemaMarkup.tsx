@@ -1,16 +1,13 @@
-"use client";
-
-import { usePathname } from "next/navigation";
 import Script from "next/script";
 
-const BASE_URL = "https://growthpedia.in";
+const BASE_URL = "https://www.allindiamarketingsolution.com";
 
 // Organization Schema - appears on every page
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": `${BASE_URL}/#organization`,
-  name: "Growthpedia Agency",
+  name: "All India Marketing Solution",
   url: BASE_URL,
   logo: `${BASE_URL}/logo.png`,
   description: "India's most trusted digital growth agency. 8 departments, 80+ specialists, 200+ clients served.",
@@ -26,7 +23,7 @@ const organizationSchema = {
       "@type": "ContactPoint",
       telephone: "+91-98765-43210",
       contactType: "sales",
-      email: "hello@growthpedia.in",
+      email: "hello@allindiamarketingsolution.com",
       areaServed: "IN",
       availableLanguage: ["English", "Hindi"],
     },
@@ -38,11 +35,11 @@ const organizationSchema = {
     addressCountry: "IN",
   },
   sameAs: [
-    "https://www.linkedin.com/company/growthpedia",
-    "https://www.instagram.com/growthpedia",
-    "https://twitter.com/growthpedia",
-    "https://www.facebook.com/growthpedia",
-    "https://www.youtube.com/@growthpedia",
+    "https://www.linkedin.com/company/allindiamarketingsolution",
+    "https://www.instagram.com/allindiamarketingsolution",
+    "https://twitter.com/allindiamarketingsolution",
+    "https://www.facebook.com/allindiamarketingsolution",
+    "https://www.youtube.com/@allindiamarketingsolution",
   ],
   knowsAbout: [
     "Search Engine Optimization",
@@ -63,7 +60,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${BASE_URL}/#website`,
-  name: "Growthpedia Agency",
+  name: "All India Marketing Solution",
   url: BASE_URL,
   publisher: { "@id": `${BASE_URL}/#organization` },
   potentialAction: {
@@ -170,11 +167,11 @@ export function LocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${BASE_URL}/#localbusiness`,
-    name: "Growthpedia Agency",
+    name: "All India Marketing Solution",
     image: `${BASE_URL}/logo.png`,
     url: BASE_URL,
     telephone: "+91-98765-43210",
-    email: "hello@growthpedia.in",
+    email: "hello@allindiamarketingsolution.com",
     priceRange: "₹₹₹",
     address: {
       "@type": "PostalAddress",
@@ -187,11 +184,125 @@ export function LocalBusinessSchema() {
     geo: { "@type": "GeoCoordinates", latitude: 28.6315, longitude: 77.2167 },
     openingHoursSpecification: [
       { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "09:00", closes: "18:00" },
+      { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "10:00", closes: "16:00" },
     ],
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "127", bestRating: "5" },
+    hasMap: "https://maps.google.com/?cid=YOUR_GOOGLE_PLACE_ID",
   };
 
   return (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
   );
 }
+
+// Author Schema — E-E-A-T trust signals
+export function AuthorSchemaMarkup({
+  name,
+  jobTitle,
+  description,
+  url,
+  image,
+}: {
+  name: string;
+  jobTitle: string;
+  description: string;
+  url: string;
+  image?: string;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name,
+    jobTitle,
+    description,
+    url: url.startsWith("http") ? url : `${BASE_URL}${url}`,
+    image: image || `${BASE_URL}/team/${name.toLowerCase().replace(/\s+/g, "-")}.jpg`,
+    worksFor: { "@id": `${BASE_URL}/#organization` },
+    sameAs: [],
+  };
+
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  );
+}
+
+// Article Schema — for blog posts
+export function ArticleSchemaMarkup({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  authorName,
+  image,
+}: {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  authorName: string;
+  image?: string;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    url: url.startsWith("http") ? url : `${BASE_URL}${url}`,
+    datePublished,
+    dateModified,
+    author: {
+      "@type": "Person",
+      name: authorName,
+      url: BASE_URL,
+    },
+    publisher: { "@id": `${BASE_URL}/#organization` },
+    image: image || `${BASE_URL}/og-image.png`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url.startsWith("http") ? url : `${BASE_URL}${url}`,
+    },
+  };
+
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  );
+}
+
+// Video Schema
+export function VideoSchemaMarkup({
+  name,
+  description,
+  thumbnailUrl,
+  uploadDate,
+  contentUrl,
+  embedUrl,
+  duration,
+}: {
+  name: string;
+  description: string;
+  thumbnailUrl: string;
+  uploadDate: string;
+  contentUrl?: string;
+  embedUrl?: string;
+  duration?: string;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name,
+    description,
+    thumbnailUrl,
+    uploadDate,
+    ...(contentUrl && { contentUrl }),
+    ...(embedUrl && { embedUrl }),
+    ...(duration && { duration }),
+    publisher: { "@id": `${BASE_URL}/#organization` },
+  };
+
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  );
+}
+

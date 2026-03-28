@@ -6,14 +6,14 @@ import { ArrowRight, Target, Users, BarChart3, Zap, Globe, Shield } from "lucide
 import styles from "./about.module.css";
 
 export const metadata: Metadata = {
-  title: "About Growthpedia — India's Most Trusted Growth Agency",
-  description: "8 departments. 80+ specialists. 200+ clients served. Learn about the team, values, and data-driven philosophy behind India's most trusted digital growth agency.",
-  alternates: { canonical: "/about" },
-  keywords: ["about Growthpedia", "digital marketing agency team", "growth agency India", "marketing specialists", "agency philosophy"],
+  title: "About All India Marketing Solution — Digital Marketing Agency Team India",
+  description: "8 specialized departments. 80+ marketing specialists. 200+ clients served. Learn about the team, values, and data-driven approach behind All India Marketing Solution.",
+  alternates: { canonical: "https://www.allindiamarketingsolution.com/about" },
+  keywords: ["about All India Marketing Solution", "digital marketing agency team India", "SEO specialists India", "marketing agency philosophy", "domain experts"],
   openGraph: {
-    title: "About Growthpedia — India's #1 Digital Growth Agency",
+    title: "About All India Marketing Solution — Digital Marketing Agency India",
     description: "8 departments. 80+ specialists. 200+ clients. Meet the team behind the growth.",
-    url: "https://growthpedia.in/about",
+    url: "https://www.allindiamarketingsolution.com/about",
     type: "website",
   },
 };
@@ -58,7 +58,7 @@ export default function AboutPage() {
               <span className="text-gradient-gold">We Are a Growth Engine.</span>
             </h1>
             <p className={styles.heroSubtext}>
-              Growthpedia was built on a simple frustration — agencies that talk big and deliver small.
+              All India Marketing Solution was built on a simple frustration — agencies that talk big and deliver small.
               We decided to build the agency we always wished existed: specialists-only, data-obsessed,
               and relentlessly focused on measurable outcomes.
             </p>

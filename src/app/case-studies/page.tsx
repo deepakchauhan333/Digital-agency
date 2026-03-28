@@ -8,16 +8,16 @@ import styles from "./case-studies.module.css";
 export const metadata: Metadata = {
   title: "Case Studies — Real Results from Real Clients",
   description: "See how we've helped 200+ clients grow. SEO, Paid Ads, Social Media, Web Development — real numbers, real timelines, real outcomes. +847% traffic. 8.7x ROAS.",
-  alternates: { canonical: "/case-studies" },
+  alternates: { canonical: "https://www.allindiamarketingsolution.com/case-studies" },
   keywords: [
     "digital marketing case studies", "SEO results", "PPC case study",
     "social media marketing results", "web development portfolio",
     "agency case studies India", "growth marketing results",
   ],
   openGraph: {
-    title: "Case Studies — Real Results from Real Clients | Growthpedia",
+    title: "Case Studies — Real Results from Real Clients | All India Marketing Solution",
     description: "200+ clients. Real numbers. +847% traffic. 8.7x ROAS. See the proof.",
-    url: "https://growthpedia.in/case-studies",
+    url: "https://www.allindiamarketingsolution.com/case-studies",
     type: "website",
   },
 };

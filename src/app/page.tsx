@@ -9,20 +9,20 @@ import TestimonialsSection from "@/components/home/TestimonialsSection";
 import CTASection from "@/components/home/CTASection";
 
 export const metadata: Metadata = {
-  title: "Growthpedia Agency — India's #1 Digital Growth Agency",
+  title: "All India Marketing Solution — SEO, PPC, Social Media & Web Development Agency India",
   description:
-    "8 specialized departments. 80+ services. 200+ clients. SEO, Paid Ads, Social Media Marketing, Web & App Development, Graphic Design, AI Automation, Lead Generation. Measurable ROI.",
-  alternates: { canonical: "/" },
+    "All India Marketing Solution: trusted digital marketing agency in India. SEO, Paid Ads, Social Media, Web & App Development, Graphic Design, AI Automation, Lead Generation. 200+ clients. 80+ specialists.",
+  alternates: { canonical: "https://www.allindiamarketingsolution.com/" },
   keywords: [
-    "digital marketing agency India", "growth agency", "SEO agency",
-    "PPC management", "social media marketing", "web development company",
-    "app development", "graphic design agency", "AI automation",
-    "lead generation", "Growthpedia", "performance marketing",
+    "digital marketing agency India", "All India Marketing Solution", "SEO agency India",
+    "PPC management India", "social media marketing agency", "web development company India",
+    "app development India", "graphic design agency", "AI automation India",
+    "lead generation agency", "performance marketing India", "digital growth agency",
   ],
   openGraph: {
-    title: "Growthpedia Agency — Digital Growth, Engineered",
-    description: "India's most trusted growth agency. 8 departments. 80+ services. Real results.",
-    url: "https://growthpedia.in",
+    title: "All India Marketing Solution — Digital Growth, Engineered",
+    description: "Trusted digital marketing agency India. 8 departments. 80+ specialists. 200+ clients. Real results.",
+    url: "https://www.allindiamarketingsolution.com",
     type: "website",
   },
 };

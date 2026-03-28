@@ -1,0 +1,29 @@
+# All India Marketing Solution
+
+> India's #1 Digital Growth Agency — SEO, Paid Ads, Social Media, Web & App Development, Graphic Design, AI Automation, Lead Generation.
+
+## About
+All India Marketing Solution is a premium digital marketing agency based in India with 8 specialized departments, 80+ services, and 200+ clients. We engineer measurable growth through data-driven strategies.
+
+## Services
+- SEO (Search Engine Optimization): Technical SEO, On-Page, Off-Page, Local SEO, Programmatic SEO, E-Commerce SEO
+- Paid Ads (PPC): Google Ads, Meta Ads, LinkedIn Ads, YouTube Ads, Performance Marketing
+- Social Media Marketing: Content Strategy, Community Management, Influencer Marketing, Social Commerce
+- Web Development: Next.js, React, WordPress, E-Commerce, Custom Web Apps
+- App Development: iOS, Android, Cross-Platform, Flutter, React Native
+- Graphic Design: Brand Identity, UI/UX Design, Packaging, Motion Graphics
+- AI Automation: CRM Automation, AI Chatbots, Workflow Automation, Predictive Analytics
+- Lead Generation: B2B Lead Gen, Multi-Channel Outreach, Email Automation, LinkedIn Outreach
+
+## Key Pages
+- Homepage: https://www.allindiamarketingsolution.com/
+- All Services: https://www.allindiamarketingsolution.com/services
+- About Us: https://www.allindiamarketingsolution.com/about
+- Case Studies: https://www.allindiamarketingsolution.com/case-studies
+- Blog: https://www.allindiamarketingsolution.com/blog
+- Contact: https://www.allindiamarketingsolution.com/contact
+
+## Contact
+- Email: hello@allindiamarketingsolution.com
+- Phone: +91 98765 43210
+- Location: New Delhi, India

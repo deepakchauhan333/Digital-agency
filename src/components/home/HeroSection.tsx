@@ -42,7 +42,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Zap size={14} />
-            <span>India&apos;s #1 Growth Agency</span>
+            <span>200+ Clients. 8 Departments. Real Results.</span>
           </motion.div>
 
           <motion.h1

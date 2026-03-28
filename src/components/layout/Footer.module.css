@@ -14,17 +14,18 @@
 
 .brand { display: flex; flex-direction: column; gap: 1.25rem; }
 
-.logo { display: flex; flex-direction: column; line-height: 1; }
-.logoMain { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--on-surface); letter-spacing: -0.02em; }
-.logoSub { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--secondary); letter-spacing: -0.02em; }
+.logo { display: flex; flex-direction: column; line-height: 1; margin-bottom: 0.5rem; }
+.footerLogo {
+  width: 180px;
+  height: auto;
+  min-height: 45px;
+  display: block;
+  object-fit: contain;
+}
 
 .brandDesc { font-size: 0.875rem; color: var(--on-surface-muted); line-height: 1.7; max-width: 300px; }
 
 .socials { display: flex; gap: 1rem; margin-top: 0.5rem; }
-.socials a { color: var(--on-surface-muted); transition: color 0.15s; }
-.socials a:hover { color: var(--primary); }
-
-.column {}
 .columnTitle { font-family: var(--font-display); font-size: 0.875rem; font-weight: 700; color: var(--on-surface); margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: 0.05em; }
 
 .columnList { list-style: none; display: flex; flex-direction: column; gap: 0.625rem; }
