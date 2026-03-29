@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -9,14 +9,6 @@
   background: #171f33;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
-}
-
-.navbar.scrolled {
-  background: #171f33; /* Fully opaque background */
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  border-bottom: 1px solid rgba(218, 226, 253, 0.15);
-  padding: 0.3rem 0 0.25rem; /* Significantly tighter padding when scrolled */
 }
 
 .inner {
