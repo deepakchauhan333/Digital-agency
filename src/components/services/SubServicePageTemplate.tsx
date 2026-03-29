@@ -10,6 +10,18 @@ import type { SubServicePageData } from "@/types/services";
 import styles from "./SubServicePageTemplate.module.css";
 import ServiceHeroDashboard, { SUB_SERVICE_DASHBOARDS } from "./ServiceHeroDashboard";
 
+/* ── Per-service trust metrics shown under the hero ── */
+const SERVICE_TRUST: Record<string, { stat: string; meta: string }[]> = {
+  "seo":              [{ stat: "+340%", meta: "Avg. organic traffic growth" }, { stat: "40+",  meta: "Websites optimised" }, { stat: "6 mo.", meta: "Avg. time to visible results" }],
+  "paid-ads":         [{ stat: "3.8x",  meta: "Avg. ROAS across campaigns" },   { stat: "₹2Cr+",meta: "Managed monthly" },         { stat: "10",    meta: "Specialisations" }],
+  "social-media":     [{ stat: "4.2x",  meta: "Avg. reach growth" },             { stat: "60+",  meta: "Accounts managed" },         { stat: "10",    meta: "Specialisations" }],
+  "web-development":  [{ stat: "2.1s",  meta: "Avg. page load time" },           { stat: "150+", meta: "Sites delivered" },           { stat: "10",    meta: "Specialisations" }],
+  "app-development":  [{ stat: "4.6★",  meta: "Avg. app store rating" },         { stat: "25+",  meta: "Apps launched" },             { stat: "10",    meta: "Specialisations" }],
+  "graphic-design":   [{ stat: "48hr",  meta: "Avg. turnaround time" },          { stat: "500+", meta: "Brand assets created" },      { stat: "10",    meta: "Specialisations" }],
+  "ai-automation":    [{ stat: "12hr",  meta: "Avg. saved per team/week" },      { stat: "30+",  meta: "Businesses automated" },      { stat: "10",    meta: "Specialisations" }],
+  "lead-generation":  [{ stat: "3.2x",  meta: "Avg. lead volume increase" },     { stat: "B2B & D2C", meta: "Sectors covered" },      { stat: "10",    meta: "Specialisations" }],
+};
+
 interface Props {
   data: SubServicePageData;
 }
@@ -39,9 +51,25 @@ export default function SubServicePageTemplate({ data }: Props) {
 
           <div className={styles.heroGrid}>
             <motion.div className={styles.heroLeft} initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}>
-              <span className={styles.badge}>{data.parentName} / {data.tagline}</span>
+              <span className={styles.badge}>★ Trusted by 200+ clients · {data.parentName}</span>
               <h1 className={styles.headline}>{data.heroHeadline}</h1>
               <p className={styles.subtext}>{data.heroSubtext}</p>
+
+              {/* Trust bar — specific credibility signals */}
+              {SERVICE_TRUST[data.parentSlug] && (
+                <div className={styles.trustBar}>
+                  {SERVICE_TRUST[data.parentSlug].map((t, i) => (
+                    <div key={t.stat} style={{ display: "contents" }}>
+                      {i > 0 && <div className={styles.trustDivider} />}
+                      <div className={styles.trustItem}>
+                        <span className={styles.trustStat}>{t.stat}</span>
+                        <span className={styles.trustMeta}>{t.meta}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               <Link href={data.primaryCTALink} className="btn btn-primary">
                 {data.primaryCTA} <ArrowRight size={18} />
               </Link>

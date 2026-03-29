@@ -48,7 +48,7 @@ export default function Navbar() {
           <Link href="/" className={styles.logo}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-              src="/logo.png" 
+              src="/allindiamarketingsolution logo (1).png" 
               alt="All India Marketing Solution" 
               className={styles.logoImage}
             />

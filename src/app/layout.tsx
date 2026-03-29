@@ -71,6 +71,16 @@ export const metadata: Metadata = {
   creator: "All India Marketing Solution",
   publisher: "All India Marketing Solution",
 
+  // Favicon / icons — webp takes priority, ico as fallback
+  icons: {
+    icon: [
+      { url: "/allindiamarketingsolution fevicon (1).webp", type: "image/webp" },
+      { url: "/favicon.ico", sizes: "48x48" },
+    ],
+    apple: "/allindiamarketingsolution fevicon (1).webp",
+    shortcut: "/allindiamarketingsolution fevicon (1).webp",
+  },
+
   // Canonical (self-referencing)
   alternates: {
     canonical: "/",
@@ -186,9 +196,9 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
         {/* Favicon suite */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/allindiamarketingsolution fevicon (1).webp" type="image/webp" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
+        <link rel="apple-touch-icon" href="/allindiamarketingsolution fevicon (1).webp" />
         <link rel="manifest" href="/manifest.json" />
 
         {/* IndexNow key file reference */}

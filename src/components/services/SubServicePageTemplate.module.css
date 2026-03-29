@@ -12,9 +12,63 @@
 .heroGrid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 4rem; align-items: center; width: 100%; }
 .heroLeft { display: flex; flex-direction: column; gap: 1.25rem; }
 .heroRight { display: flex; justify-content: flex-end; perspective: 1000px; }
-.badge { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--secondary); }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  background: rgba(78, 222, 163, 0.08);
+  border: 1px solid rgba(78, 222, 163, 0.2);
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-full);
+  width: fit-content;
+}
 .headline { font-size: var(--display-lg); line-height: 1.1; letter-spacing: -0.02em; }
-.subtext { font-size: 1.125rem; color: var(--on-surface-muted); line-height: 1.7; width: 100%; }
+.subtext { font-size: 1.075rem; color: var(--on-surface-muted); line-height: 1.7; max-width: 520px; }
+
+/* Trust bar — 3 quick credibility signals under the subtext */
+.trustBar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0.9rem 1.25rem;
+  background: var(--surface-container);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--outline-ghost);
+  width: fit-content;
+}
+
+.trustItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.trustStat {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.trustMeta {
+  font-size: 0.65rem;
+  color: var(--on-surface-muted);
+  white-space: nowrap;
+}
+
+.trustDivider {
+  width: 1px;
+  height: 28px;
+  background: var(--outline-ghost);
+  flex-shrink: 0;
+}
 
 @media (max-width: 1024px) {
   .heroGrid { grid-template-columns: 1fr; gap: 3rem; text-align: center; }

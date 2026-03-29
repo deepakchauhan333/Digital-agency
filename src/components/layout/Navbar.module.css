@@ -135,6 +135,10 @@
   color: var(--on-surface);
   cursor: pointer;
   padding: 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Mobile Menu */
@@ -163,9 +167,12 @@
   font-weight: 700;
   color: var(--on-surface);
   text-decoration: none;
-  padding: 0.75rem 0;
+  padding: 0.875rem 0;
   border-bottom: 1px solid var(--outline-ghost);
   transition: color 0.15s;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .mobileLink:hover {
@@ -211,6 +218,15 @@
     display: none;
   }
   .hamburger {
-    display: block;
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding: 0 1rem;
+  }
+  .logoImage {
+    width: 90px;
   }
 }

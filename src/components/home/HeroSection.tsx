@@ -21,17 +21,19 @@ export default function HeroSection() {
         ))}
       </div>
 
-      {/* Floating Orbs */}
-      <motion.div
-        className={styles.orbGold}
-        animate={{ y: [0, -30, 0], x: [0, 15, 0] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className={styles.orbEmerald}
-        animate={{ y: [0, 20, 0], x: [0, -20, 0] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-      />
+      {/* Floating Orbs - wrapped so overflow doesn't affect page scroll */}
+      <div className={styles.orbsWrapper}>
+        <motion.div
+          className={styles.orbGold}
+          animate={{ y: [0, -30, 0], x: [0, 15, 0] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className={styles.orbEmerald}
+          animate={{ y: [0, 20, 0], x: [0, -20, 0] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        />
+      </div>
 
       <div className={`container ${styles.content}`}>
         <div className={styles.left}>
@@ -90,16 +92,19 @@ export default function HeroSection() {
             <div className={styles.trustItem}>
               <span className={styles.trustNumber}>200+</span>
               <span className={styles.trustLabel}>Clients Served</span>
+              <span className={styles.trustProof}>Since 2019 · Across India</span>
             </div>
             <div className={styles.trustDivider} />
             <div className={styles.trustItem}>
               <span className={styles.trustNumber}>₹50Cr+</span>
               <span className={styles.trustLabel}>Revenue Generated</span>
+              <span className={styles.trustProof}>Tracked across accounts</span>
             </div>
             <div className={styles.trustDivider} />
             <div className={styles.trustItem}>
               <span className={styles.trustNumber}>15+</span>
               <span className={styles.trustLabel}>Industries</span>
+              <span className={styles.trustProof}>E-comm to healthcare</span>
             </div>
           </motion.div>
         </div>

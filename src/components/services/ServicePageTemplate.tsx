@@ -150,23 +150,31 @@ export default function ServicePageTemplate({ data }: Props) {
       <section className={styles.subServices}>
         <div className="container">
           <AnimatedSection>
+            <span className="section-label">Pick Your Focus</span>
             <h2 className={styles.sectionTitle}>
-              Explore Our <span className="text-gradient-gold">{data.name}</span> Services
+              Not all {data.name} is the same.{" "}
+              <span className="text-gradient-gold">Find the service that fits your exact problem.</span>
             </h2>
+            <p className={styles.subServicesIntro}>
+              Each specialisation below targets a specific gap. Click through to see what it covers,
+              how we execute it, and whether it matches your current stage.
+            </p>
           </AnimatedSection>
           <div className={styles.subGrid}>
             {data.subServices.map((sub, i) => (
-              <AnimatedSection key={sub.slug} delay={i * 0.06}>
+              <AnimatedSection key={sub.slug} delay={i * 0.05}>
                 <Link
                   href={`/services/${data.slug}/${sub.slug}`}
                   className={styles.subCard}
                 >
-                  <div className={styles.subCardTop}>
-                    <span className={styles.subNumber}>{String(i + 1).padStart(2, "0")}</span>
-                    <ArrowUpRight size={16} className={styles.subArrow} />
+                  <div className={styles.subCardInner}>
+                    <h3 className={styles.subName}>{sub.name}</h3>
+                    <p className={styles.subDesc}>{sub.desc}</p>
                   </div>
-                  <h3 className={styles.subName}>{sub.name}</h3>
-                  <p className={styles.subDesc}>{sub.desc}</p>
+                  <div className={styles.subCardFoot}>
+                    <span className={styles.subExplore}>See how it works</span>
+                    <ArrowUpRight size={14} className={styles.subArrow} />
+                  </div>
                 </Link>
               </AnimatedSection>
             ))}

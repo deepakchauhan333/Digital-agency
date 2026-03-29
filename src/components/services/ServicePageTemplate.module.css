@@ -45,15 +45,64 @@
 
 /* -- Sub-Services Grid -- */
 .subServices { padding: 8.5rem 0; background: var(--surface-container-low); }
-.subGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
-.subCard { display: flex; flex-direction: column; gap: 0.75rem; background: var(--surface-container); border-radius: var(--radius-lg); padding: 1.5rem; text-decoration: none; transition: all 0.3s ease; cursor: pointer; height: 100%; border: 1px solid transparent; }
-.subCard:hover { background: var(--surface-container-highest); transform: translateY(-4px); box-shadow: var(--shadow-ambient); border-color: var(--outline-ghost); }
-.subCardTop { display: flex; justify-content: space-between; align-items: center; }
-.subNumber { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--primary); opacity: 0.7; }
-.subArrow { color: var(--on-surface-muted); transition: all 0.3s; }
+.subServicesIntro { font-size: 0.9rem; color: var(--on-surface-muted); max-width: 600px; line-height: 1.7; margin-top: -1rem; margin-bottom: 2.5rem; }
+
+.subGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+
+.subCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--surface-container);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  height: 100%;
+  border: 1px solid var(--outline-ghost);
+  overflow: hidden;
+  position: relative;
+}
+
+.subCard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--primary);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.subCard:hover { background: var(--surface-container-high); transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+.subCard:hover::before { opacity: 1; }
+
+.subCardInner { padding: 1.5rem 1.5rem 0.75rem; flex: 1; }
+.subName { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--on-surface); margin-bottom: 0.5rem; line-height: 1.3; }
+.subDesc { font-size: 0.8rem; color: var(--on-surface-muted); line-height: 1.65; }
+
+.subCardFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid var(--outline-ghost);
+  background: var(--surface-container-low);
+}
+
+.subExplore {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--on-surface-muted);
+  transition: color 0.2s;
+}
+.subCard:hover .subExplore { color: var(--primary); }
+
+.subArrow { color: var(--on-surface-muted); transition: color 0.25s, transform 0.25s; }
 .subCard:hover .subArrow { color: var(--primary); transform: translate(2px, -2px); }
-.subName { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--on-surface); }
-.subDesc { font-size: 0.8rem; color: var(--on-surface-muted); line-height: 1.6; }
 
 /* -- Process -- */
 .process { padding: 8.5rem 0; }
@@ -118,12 +167,13 @@
 
 /* -- Responsive -- */
 @media (max-width: 1024px) {
-  .heroGrid { grid-template-columns: 1fr; }
-  .heroRight { display: none; }
+  .heroGrid { grid-template-columns: 1fr; gap: 3rem; }
+  .heroRight { display: flex; justify-content: center; }
   .problemGrid { grid-template-columns: 1fr; gap: 2rem; }
   .subGrid { grid-template-columns: repeat(2, 1fr); }
   .profileGrid { grid-template-columns: 1fr; }
   .relatedGrid { grid-template-columns: 1fr; }
+  .heroVisual { max-width: 480px; aspect-ratio: auto; min-height: 260px; }
 }
 
 @media (max-width: 768px) {
@@ -135,4 +185,13 @@
   .problem, .whatWeDo, .subServices, .process, .results, .whoFor, .faq, .ctaBlock { padding: 5rem 0; }
   .heroActions { flex-direction: column; align-items: flex-start; }
   .ctaActions { flex-direction: column; }
+  .heroVisual { max-width: 100%; aspect-ratio: auto; min-height: 220px; }
+  .visualCard { width: 90%; padding: 1.5rem; }
+  .visualLabel { font-size: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  .heroVisual { min-height: 180px; }
+  .visualCard { width: 95%; padding: 1.25rem; }
+  .heroHeadline { font-size: var(--display-lg); }
 }
