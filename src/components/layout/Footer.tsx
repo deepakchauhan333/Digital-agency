@@ -31,7 +31,7 @@ export default function Footer() {
           <div className={styles.logo}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-              src="/allindiamarketingsolution logo (1).png" 
+              src="/all%20india%20marketing%20solution%20(1).webp" 
               alt="All India Marketing Solution" 
               className={styles.footerLogo}
             />
@@ -82,7 +82,7 @@ export default function Footer() {
           <h4 className={styles.columnTitle}>Get In Touch</h4>
           <ul className={styles.columnList}>
             <li><a href="mailto:hello@allindiamarketingsolution.com">hello@allindiamarketingsolution.com</a></li>
-            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li><a href="tel:+919352107526">+91 93521 07526</a></li>
             <li>New Delhi, India</li>
           </ul>
           <Link href="/contact" className="btn btn-primary" style={{ marginTop: "1.5rem" }}>

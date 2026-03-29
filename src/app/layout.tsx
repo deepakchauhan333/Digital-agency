@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import BackToTop from "@/components/layout/BackToTop";
+import WhatsAppWidget from "@/components/layout/WhatsAppWidget";
 import SmoothScroll from "@/components/providers/SmoothScroll";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import {
@@ -215,6 +216,7 @@ export default function RootLayout({
           <main id="main-content" role="main">
             {children}
           </main>
+          <WhatsAppWidget />
           <Footer />
           <BackToTop />
         </SmoothScroll>

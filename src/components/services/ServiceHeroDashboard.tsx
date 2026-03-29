@@ -245,7 +245,12 @@ export default function ServiceHeroDashboard({ config }: { config: DashboardConf
             strokeLinecap="round"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
-            transition={{ duration: 2, delay: 0.8, ease: "easeOut" }}
+            transition={{ 
+              type: "spring", 
+              bounce: 0, 
+              duration: 2.5, 
+              delay: 0.5 
+            }}
           />
           {/* Area Fill */}
           <motion.path
@@ -253,7 +258,7 @@ export default function ServiceHeroDashboard({ config }: { config: DashboardConf
             fill={`url(#grad-${config.title.replace(/\s/g, "")})`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 2.2 }}
+            transition={{ duration: 1.2, delay: 1.5 }}
           />
         </svg>
 
@@ -261,17 +266,28 @@ export default function ServiceHeroDashboard({ config }: { config: DashboardConf
         <motion.div
           className={styles.metricCard}
           style={{ top: "12%", right: "4%" }}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 1.8 }}
+          initial={{ opacity: 0, x: 20, scale: 0.95 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          transition={{ 
+            type: "spring",
+            stiffness: 100,
+            damping: 15,
+            delay: 1.8 
+          }}
         >
-          {config.primaryMetric.trend === "up" ? (
-            <TrendingUp size={16} color={config.graphColor} />
-          ) : config.primaryMetric.trend === "down" ? (
-            <TrendingDown size={16} color={config.graphColor} />
-          ) : (
-            <Zap size={16} color={config.graphColor} />
-          )}
+          <motion.div
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ repeat: Infinity, duration: 2, delay: 2 }}
+            className="flex items-center justify-center"
+          >
+            {config.primaryMetric.trend === "up" ? (
+              <TrendingUp size={16} color={config.graphColor} />
+            ) : config.primaryMetric.trend === "down" ? (
+              <TrendingDown size={16} color={config.graphColor} />
+            ) : (
+              <Zap size={16} color={config.graphColor} />
+            )}
+          </motion.div>
           <span className={styles.metricValue}>{config.primaryMetric.value}</span>
           <span className={styles.metricLabel}>{config.primaryMetric.label}</span>
         </motion.div>
@@ -280,9 +296,14 @@ export default function ServiceHeroDashboard({ config }: { config: DashboardConf
         <motion.div
           className={styles.metricCard}
           style={{ top: "50%", left: "4%" }}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 2.1 }}
+          initial={{ opacity: 0, x: -20, scale: 0.95 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          transition={{ 
+            type: "spring",
+            stiffness: 100,
+            damping: 15,
+            delay: 2.1 
+          }}
         >
           <BarChart3 size={16} color={config.secondaryMetric.color || "#f7be1d"} />
           <span className={styles.metricValue}>{config.secondaryMetric.value}</span>
@@ -294,9 +315,14 @@ export default function ServiceHeroDashboard({ config }: { config: DashboardConf
           <motion.div
             className={styles.miniMetric}
             style={{ bottom: "8%", right: "4%" }}
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3, delay: 2.5 }}
+            transition={{ 
+              type: "spring",
+              stiffness: 200,
+              damping: 10,
+              delay: 2.4 
+            }}
           >
             <Target size={12} color={config.graphColor} />
             <span>{config.tertiaryMetric.value}</span>

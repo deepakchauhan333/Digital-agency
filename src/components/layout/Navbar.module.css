@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 1.25rem 0;
+  padding: 0.5rem 0 0.35rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   background: #171f33;
   backdrop-filter: blur(50px);
@@ -16,7 +16,7 @@
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   border-bottom: 1px solid rgba(218, 226, 253, 0.15);
-  padding: 0.5rem 0; /* Slightly tighter padding when scrolled */
+  padding: 0.3rem 0 0.25rem; /* Significantly tighter padding when scrolled */
 }
 
 .inner {
@@ -37,7 +37,7 @@
 }
 
 .logoImage {
-  width: 120px;
+  width: 104px;
   height: auto;
   min-height: 30px;
   display: block;
@@ -46,7 +46,7 @@
 
 @media (max-width: 640px) {
   .logoImage {
-    width: 110px;
+    width: 95px;
     min-height: 32px;
   }
 }
@@ -227,7 +227,7 @@
     padding: 0 1rem;
   }
   .logoImage {
-    width: 110px;
+    width: 95px;
     min-height: 30px;
   }
 }

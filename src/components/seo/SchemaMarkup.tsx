@@ -9,7 +9,7 @@ const organizationSchema = {
   "@id": `${BASE_URL}/#organization`,
   name: "All India Marketing Solution",
   url: BASE_URL,
-  logo: `${BASE_URL}/logo.png`,
+  logo: `${BASE_URL}/all%20india%20marketing%20solution%20(1).webp`,
   description: "India's most trusted digital growth agency. 8 departments, 80+ specialists, 200+ clients served.",
   foundingDate: "2020",
   numberOfEmployees: { "@type": "QuantitativeValue", value: 80 },
@@ -21,7 +21,7 @@ const organizationSchema = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+91-98765-43210",
+      telephone: "+91-93521-07526",
       contactType: "sales",
       email: "hello@allindiamarketingsolution.com",
       areaServed: "IN",
@@ -168,9 +168,9 @@ export function LocalBusinessSchema() {
     "@type": "ProfessionalService",
     "@id": `${BASE_URL}/#localbusiness`,
     name: "All India Marketing Solution",
-    image: `${BASE_URL}/logo.png`,
+    image: `${BASE_URL}/all%20india%20marketing%20solution%20(1).webp`,
     url: BASE_URL,
-    telephone: "+91-98765-43210",
+    telephone: "+91-93521-07526",
     email: "hello@allindiamarketingsolution.com",
     priceRange: "₹₹₹",
     address: {

@@ -46,7 +46,7 @@ export default function ContactForm() {
                     <Phone size={20} className={styles.infoIcon} />
                     <div>
                       <span className={styles.infoLabel}>Phone</span>
-                      <a href="tel:+919876543210">+91 98765 43210</a>
+                      <a href="tel:+919352107526">+91 93521 07526</a>
                     </div>
                   </div>
                   <div className={styles.infoItem}>
@@ -91,7 +91,7 @@ export default function ContactForm() {
                     <div className={styles.fieldRow}>
                       <div className={styles.field}>
                         <label>Phone</label>
-                        <input type="tel" placeholder="+91 98765 43210" value={formState.phone} onChange={(e) => setFormState({ ...formState, phone: e.target.value })} />
+                        <input type="tel" placeholder="+91 93521 07526" value={formState.phone} onChange={(e) => setFormState({ ...formState, phone: e.target.value })} />
                       </div>
                       <div className={styles.field}>
                         <label>Service Interested In</label>
