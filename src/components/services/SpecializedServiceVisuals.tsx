@@ -5,7 +5,7 @@ import {
   TrendingUp, Search, MousePointer2, Heart, Share2, MessageCircle, 
   Code, Palette, Cpu, Users, Target, Rocket,
   Globe, Zap, CheckCircle2, ShieldCheck, BarChart3, Calendar, Plus,
-  ChevronRight, Eye, BellRing, Activity
+  ChevronRight, Eye, BellRing, Activity, TrendingDown
 } from "lucide-react";
 import styles from "./SpecializedServiceVisuals.module.css";
 
