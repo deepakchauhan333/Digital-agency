@@ -1,5 +1,7 @@
 "use client";
 
+import { useState, useEffect } from "react";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   TrendingUp, Search, MousePointer2, Heart, Share2, MessageCircle, 
@@ -107,76 +109,82 @@ const PaidAdsVisual = () => (
   </div>
 );
 
-// 3. Social Media: Viral Velocity Tracker
+// 3. Social Media: Viral Presence Hub
 const SocialVisual = () => {
+  const [count, setCount] = useState(5);
+
+  useEffect(() => {
+    const duration = 4000;
+    const end = 20452;
+    const start = 5;
+    let startTime: number | null = null;
+    
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const easeProgress = 1 - Math.pow(1 - progress, 4);
+      setCount(Math.floor(easeProgress * (end - start) + start));
+      if (progress < 1) requestAnimationFrame(animate);
+    };
+    requestAnimationFrame(animate);
+  }, []);
+
   return (
-    <div className="w-full h-full flex items-center justify-center py-6">
-      <div className={styles.mobileFrame}>
-        <div className={styles.mobileNotch} />
-        {/* Mock Reel Video Area */}
-        <div className="w-full h-full bg-[#111] relative border-8 border-black rounded-[28px] overflow-hidden pointer-events-none">
-          {/* Main Visual content */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black" />
-          <motion.div 
-            className="absolute inset-0 flex items-center justify-center opacity-10"
-            animate={{ scale: [1, 1.2, 1] }} transition={{ repeat: Infinity, duration: 4 }}
-          >
-             <Globe size={100} />
-          </motion.div>
-          
-          {/* Reaction Bubbles */}
-          <motion.div className="absolute right-4 bottom-32 flex flex-col gap-4">
-             <motion.div className="bg-white/10 p-2 rounded-full backdrop-blur" animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
-               <Heart size={20} className="fill-red-500 text-red-500" />
-             </motion.div>
-             <motion.div className="bg-white/10 p-2 rounded-full backdrop-blur" animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 1.5, delay: 0.2 }}>
-               <MessageCircle size={20} className="fill-white" />
-             </motion.div>
-             <motion.div className="bg-white/10 p-2 rounded-full backdrop-blur" animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 1.5, delay: 0.4 }}>
-               <Share2 size={20} className="text-white" />
-             </motion.div>
-          </motion.div>
-          
-          {/* Bottom Info & Stats Tracker */}
-          <div className="absolute bottom-4 left-4 right-4 z-10">
-            <div className="flex items-center gap-2 mb-3">
-              <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
-                 <span className="text-[8px] font-bold text-black border border-black px-1 rounded">AIMS</span>
-              </div>
-              <span className="font-bold text-sm text-white">@growthpedia</span>
-              <span className="bg-blue-500 text-white text-[8px] font-bold px-1 rounded">PRO</span>
-            </div>
-            
-            {/* The Velocity Counter */}
-            <motion.div className="bg-white/10 backdrop-blur border border-white/20 p-3 rounded-xl overflow-hidden relative" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }}>
-               <div className="flex justify-between items-center mb-1">
-                 <span className="text-[10px] uppercase font-black opacity-70 flex items-center gap-1"><Eye size={10}/> Live Views</span>
-                 <motion.span className="text-emerald-400 text-[10px] font-bold" animate={{ opacity: [1, 0, 1] }} transition={{ repeat: Infinity, duration: 1 }}>● Viral</motion.span>
-               </div>
-               
-               <div className="text-3xl font-black font-mono tracking-tighter flex items-center text-white">
-                  1,2<motion.div className="inline-flex flex-col h-[36px] overflow-hidden leading-[36px]">
-                     <motion.div animate={{ y: ["0%", "-80%"] }} transition={{ duration: 10, ease: "linear", repeat: Infinity }}>
-                       {Array.from({length: 10}).map((_, i) => <div key={i}>{(i*4)%10}{((i*4)+3)%10}K</div>)}
-                     </motion.div>
-                  </motion.div>
-               </div>
-            </motion.div>
+    <div className={styles.leadDashboard}>
+       <div className={styles.leadStats}>
+          <div className={styles.leadStat}>
+             <div className="text-[8px] font-black opacity-40 uppercase mb-1">Follower Growth</div>
+             <div className="flex items-end gap-1">
+                <span className="text-xl font-bold text-primary">{count.toLocaleString()}</span>
+                <span className="text-[10px] text-emerald font-bold mb-1">+2,400%</span>
+             </div>
           </div>
-          
-          {/* Emojis flying up */}
-          {Array.from({ length: 5 }).map((_, i) => (
-             <motion.div 
-               key={i} className="absolute bottom-10 right-20 text-xl"
-               initial={{ y: 0, opacity: 0, scale: 0.5, x: 0 }}
-               animate={{ y: -200, opacity: [0, 1, 0], scale: 1.5, x: Math.random() * -40 }}
-               transition={{ duration: 2, repeat: Infinity, delay: i * 0.4 }}
-             >
-               🔥
-             </motion.div>
-          ))}
-        </div>
-      </div>
+          <div className={styles.leadStat}>
+             <div className="text-[8px] font-black opacity-40 uppercase mb-1">Active Profiles</div>
+             <div className="flex items-end gap-1">
+                <span className="text-xl font-bold">14 Live</span>
+                <Globe size={14} className="text-primary opacity-50 mb-1" />
+             </div>
+          </div>
+       </div>
+
+       <div className={styles.leadTable}>
+          <div className={styles.leadHeader}>
+             <span>Viral Campaign Handle</span>
+             <span>Impact Score</span>
+             <span>Status</span>
+          </div>
+          <div className="flex-1 overflow-hidden">
+             {[
+               { name: "@arjun_m (Arjun Mehta)", score: 98, status: "VIRAL" },
+               { name: "@priya_design (Priya S.)", score: 94, status: "TRENDING" },
+               { name: "@rahul_growth (Rahul V.)", score: 89, status: "STABLE" },
+               { name: "@aims_official", score: 91, status: "SCALE" }
+             ].map((item, i) => (
+                <motion.div 
+                  key={i} className={styles.leadRow}
+                  initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.2 }}
+                >
+                   <div className="flex flex-col gap-0.5">
+                      <span className="font-bold">{item.name}</span>
+                      <span className={styles.sourceTag}>Engineered_Presence</span>
+                   </div>
+                   <div className={styles.qualityScore}>
+                      <Zap size={12} /> {item.score}%
+                   </div>
+                   <div className="bg-emerald/10 text-emerald text-[7px] font-bold px-1.5 py-0.5 rounded-full border border-emerald/20">
+                      {item.status}
+                   </div>
+                </motion.div>
+             ))}
+          </div>
+          <div className="p-2 bg-primary/10 border-t border-primary/20 text-center">
+             <span className="text-[8px] font-black text-primary uppercase tracking-tighter">
+                Live Engagement Monitoring: Viral Surge Active
+             </span>
+          </div>
+       </div>
     </div>
   );
 };
@@ -272,47 +280,64 @@ const AppDevVisual = () => (
   </div>
 );
 
-// 6. Graphic Design: Live Brand Evolution
+// 6. Graphic Design: Brand Precision Studio
 const DesignVisual = () => {
   return (
-    <div className={styles.figmaCanvas}>
-      {/* Player 1 Cursor */}
-      <motion.div className={styles.cursor} initial={{ x: 50, y: 50 }} animate={{ x: [50, 200, 150, 300], y: [50, 100, 250, 150] }} transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}>
-        <MousePointer2 size={16} color="#0ea5e9" className="fill-[#0ea5e9]" />
-        <span className={styles.cursorName} style={{ color: "#0ea5e9" }}>Alex (UI)</span>
-      </motion.div>
-      
-      {/* Player 2 Cursor */}
-      <motion.div className={styles.cursor} initial={{ x: 350, y: 200 }} animate={{ x: [350, 100, 250, 100], y: [200, 300, 80, 200] }} transition={{ repeat: Infinity, duration: 10, ease: "easeInOut" }}>
-        <MousePointer2 size={16} color="#f43f5e" className="fill-[#f43f5e]" />
-        <span className={styles.cursorName} style={{ color: "#f43f5e" }}>Sam (Brand)</span>
-      </motion.div>
+    <div className={styles.leadDashboard}>
+       <div className={styles.leadStats}>
+          <div className={styles.leadStat}>
+             <div className="text-[8px] font-black opacity-40 uppercase mb-1">Precision Score</div>
+             <div className="flex items-end gap-1">
+                <span className="text-xl font-bold text-primary">99.8%</span>
+                <span className="text-[10px] text-emerald font-bold mb-1">A+</span>
+             </div>
+          </div>
+          <div className={styles.leadStat}>
+             <div className="text-[8px] font-black opacity-40 uppercase mb-1">Assets Refined</div>
+             <div className="flex items-end gap-1">
+                <span className="text-xl font-bold">14 Items</span>
+                <Palette size={14} className="text-primary opacity-50 mb-1" />
+             </div>
+          </div>
+       </div>
 
-      <div className="relative w-64 h-64 flex items-center justify-center">
-         {/* The Wireframe Base */}
-         <div className="absolute inset-0 border-2 border-dashed border-white/20 rounded-[2rem] flex items-center justify-center">
-            <Code size={40} className="text-white/20" />
-         </div>
-         
-         {/* The Polished Asset overlay morphing in */}
-         <motion.div 
-           className="absolute inset-0 bg-surface-container-high border-2 border-primary rounded-[2rem] flex flex-col items-center justify-center overflow-hidden shadow-2xl shadow-primary/20"
-           initial={{ clipPath: "circle(0% at 50% 50%)" }}
-           animate={{ clipPath: ["circle(0% at 50% 50%)", "circle(150% at 50% 50%)", "circle(150% at 50% 50%)"] }}
-           transition={{ duration: 6, repeat: Infinity, repeatDelay: 2 }}
-         >
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-primary to-emerald mb-4 flex items-center justify-center text-black">
-               <Palette size={32} />
-            </div>
-            <div className="w-32 h-4 bg-white/10 rounded-full mb-2" />
-            <div className="w-24 h-4 bg-white/10 rounded-full" />
-            
-            {/* Component Guides */}
-            <div className="absolute top-2 left-2 text-[8px] font-mono text-primary border border-primary/30 px-1">AUTO-LAYOUT</div>
-            <div className="absolute right-0 top-1/2 w-8 border-t border-dashed border-primary/50" />
-            <div className="absolute bottom-0 left-1/2 h-8 border-l border-dashed border-primary/50" />
-         </motion.div>
-      </div>
+       <div className={styles.leadTable}>
+          <div className={styles.leadHeader}>
+             <span>Refinement Asset</span>
+             <span>Audit Rule</span>
+             <span>Verification</span>
+          </div>
+          <div className="flex-1 overflow-hidden">
+             {[
+               { name: "Master Logo v.3.1", rule: "Golden Ratio 1.618", status: "LOCKED" },
+               { name: "Brand Guidelines", rule: "#171f33 / #DAE2FD", status: "VERIFIED" },
+               { name: "Typography Scale", rule: "Inter Black / -0.05em", status: "PASSED" },
+               { name: "Iconography Core", rule: "Vector Precision", status: "STABLE" }
+             ].map((asset, i) => (
+                <motion.div 
+                  key={i} className={styles.leadRow}
+                  initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.2 }}
+                >
+                   <div className="flex flex-col gap-0.5">
+                      <span className="font-bold">{asset.name}</span>
+                      <span className={styles.sourceTag}>Math_Verified_Design</span>
+                   </div>
+                   <div className={styles.qualityScore}>
+                      <Code size={12} /> {asset.rule}
+                   </div>
+                   <div className="bg-emerald/10 text-emerald text-[7px] font-bold px-1.5 py-0.5 rounded-full border border-emerald/20">
+                      {asset.status}
+                   </div>
+                </motion.div>
+             ))}
+          </div>
+          <div className="p-2 bg-primary/10 border-t border-primary/20 text-center">
+             <span className="text-[8px] font-black text-primary uppercase tracking-tighter">
+                Brand Authority Engine: Zero-Pixel Error Audit Active
+             </span>
+          </div>
+       </div>
     </div>
   );
 };
@@ -368,53 +393,63 @@ const AIVisual = () => (
   </div>
 );
 
-// 8. Lead Generation: The Qualification Filter
+// 8. Lead Generation: High-Intent Engine
 const LeadGenVisual = () => {
   return (
-    <div className={styles.leadFunnel}>
-       {/* Traffic Source */}
-       <div className="flex gap-8 mb-8 opacity-50 text-[10px] font-mono uppercase tracking-widest">
-         <span>Organic</span><span>Ads</span><span>Outreach</span>
-       </div>
-       
-       {/* The Filter / Funnel */}
-       <div className="relative w-48 h-32 flex justify-center">
-          {/* Funnel shape using borders */}
-          <div className="absolute inset-0" style={{ borderTop: "4px solid var(--primary)", borderLeft: "40px solid transparent", borderRight: "40px solid transparent", borderBottom: "4px solid var(--primary)", opacity: 0.2 }} />
-          
-          {/* Particles (Good and Bad) */}
-          {Array.from({ length: 15 }).map((_, i) => {
-             const isGood = i % 3 === 0; // 1 in 3 is a good lead
-             return (
-               <motion.div 
-                 key={i}
-                 className={styles.leadParticle}
-                 style={{ color: isGood ? "var(--primary)" : "#666", background: isGood ? "var(--primary)" : "#666" }}
-                 initial={{ y: -40, x: (Math.random() - 0.5) * 100, opacity: 0 }}
-                 animate={{ 
-                   y: isGood ? [0, 80, 200] : [0, 60, 60], 
-                   x: isGood ? ["auto", "0px", "0px"] : ["auto", `${(Math.random() - 0.5) * 200}px`, `${(Math.random() - 0.5) * 300}px`],
-                   opacity: isGood ? [0, 1, 1, 0] : [0, 1, 0, 0]
-                 }}
-                 transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.3 }}
-               />
-             )
-          })}
-          
-          {/* Rejection Label */}
-          <motion.div className="absolute top-1/2 -left-32 text-[10px] text-red-500 font-black uppercase opacity-60 flex items-center gap-1" animate={{ opacity: [0.3, 0.8, 0.3] }} transition={{ repeat: Infinity, duration: 1.5 }}><ChevronRight /> Disqualified</motion.div>
-          <motion.div className="absolute top-1/2 -right-32 text-[10px] text-red-500 font-black uppercase opacity-60 flex items-center gap-1"><ChevronRight className="rotate-180" /> Bounced</motion.div>
-       </div>
-       
-       {/* Database / CRM Box */}
-       <div className={styles.dbContainer}>
-          <div className="text-center z-10 w-full px-4">
-             <div className="text-2xl font-black text-white mb-1"><span className="text-primary">+</span> SQLs</div>
-             <motion.div className="mx-auto w-max px-2 py-1 bg-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase rounded flex items-center justify-center gap-1" animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }}>
-                <BellRing size={12} /> Meetings
-             </motion.div>
+    <div className={styles.leadDashboard}>
+       <div className={styles.leadStats}>
+          <div className={styles.leadStat}>
+             <div className="text-[8px] font-black opacity-40 uppercase mb-1">Weekly Volume</div>
+             <div className="flex items-end gap-1">
+                <span className="text-xl font-bold">1,204</span>
+                <span className="text-[10px] text-emerald font-bold mb-1">+42%</span>
+             </div>
           </div>
-          <div className="absolute inset-0 bg-primary/5 rounded-md mix-blend-screen pointer-events-none" />
+          <div className={styles.leadStat}>
+             <div className="text-[8px] font-black opacity-40 uppercase mb-1">Avg Lead Score</div>
+             <div className="flex items-end gap-1">
+                <span className="text-xl font-bold text-emerald">92%</span>
+                <ShieldCheck size={14} className="text-emerald opacity-50 mb-1" />
+             </div>
+          </div>
+       </div>
+
+       <div className={styles.leadTable}>
+          <div className={styles.leadHeader}>
+             <span>Verified Target</span>
+             <span>Quality Score</span>
+             <span>Intent</span>
+          </div>
+          <div className="flex-1 overflow-hidden">
+             {[
+               { name: "Amit K. (Software Founder)", score: 98, source: "High" },
+               { name: "Nisha G. (Marketing Head)", score: 94, source: "Medium" },
+               { name: "Rajiv S. (MD)", score: 89, source: "Hot" },
+               { name: "Sanjay B. (Director)", score: 91, source: "Ready" }
+             ].map((lead, i) => (
+                <motion.div 
+                  key={i} className={styles.leadRow}
+                  initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.2 }}
+                >
+                   <div className="flex flex-col gap-0.5">
+                      <span className="font-bold">{lead.name}</span>
+                      <span className={styles.sourceTag}>Qualified_SQL</span>
+                   </div>
+                   <div className={styles.qualityScore}>
+                      <Activity size={12} /> {lead.score}%
+                   </div>
+                   <div className="bg-emerald/10 text-emerald text-[7px] font-bold px-1.5 py-0.5 rounded-full border border-emerald/20">
+                      BOOKED
+                   </div>
+                </motion.div>
+             ))}
+          </div>
+          <div className="p-2 bg-emerald-500/10 border-t border-emerald-500/20 text-center">
+             <span className="text-[8px] font-black text-emerald uppercase tracking-tighter">
+                Indian Market Pipeline: Filtering Non-Buyers
+             </span>
+          </div>
        </div>
     </div>
   );
