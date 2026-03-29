@@ -1,7 +1,7 @@
 import { SubServicePageData } from "@/types/services";
 const P="app-development",N="App Development";
 const mk=(s:string,n:string,t:string,hh:string,hs:string,pq:string,pt:string,wt:string,wi:{title:string,desc:string}[]):SubServicePageData=>({
-  parentSlug:P,parentName:N,slug:s,name:n,tagline:t,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Discuss Your App",primaryCTALink:"/contact",pullQuote:pq,problemText:pt,whatWeDoTitle:wt,whatWeDoItems:wi,
+  parentSlug:P,parentName:N,slug:s,name:n,tagline:t,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Build My App Idea",primaryCTALink:"/contact",pullQuote:pq,problemText:pt,whatWeDoTitle:wt,whatWeDoItems:wi,
   processSteps:[{number:"01",title:"Discovery",desc:"Requirements and product strategy."},{number:"02",title:"Design",desc:"UI/UX design and prototyping."},{number:"03",title:"Develop",desc:"Agile sprints with regular demos."},{number:"04",title:"Launch",desc:"Store submission and growth."}],
   caseStudies:[{industry:"MULTI",client:"Various",result:"50K+ total downloads",metrics:["4.5+ avg ratings","Retention rates above industry avg"],timeframe:"10-16 weeks"}],
   clientProfiles:[{label:"Profile 1",desc:"You have a validated idea that needs a world-class technical team."}],

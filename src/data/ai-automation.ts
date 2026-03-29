@@ -5,7 +5,7 @@ export const aiAutomationData: ServicePageData = {
   heroHeadline: "Automate Growth.\nEliminate Manual Work.",
   heroSubtext: "AI chatbots, CRM automation, workflow optimization, AI content systems, predictive analytics — we build intelligent automation that scales your operations.",
   heroVisualDesc: "AI workflow diagram showing automated lead flows, chatbot conversations, and analytics.",
-  primaryCTA: "Get Automation Audit", secondaryCTA: "See AI Results", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
+  primaryCTA: "Save 12 Hours a Week", secondaryCTA: "See AI Results", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
   pullQuote: "Your team is doing work that machines should be doing. Every hour wasted on manual tasks is an hour not spent growing.",
   problemText: "Businesses lose thousands of hours annually to repetitive tasks — data entry, lead follow-ups, report generation, customer responses. AI automation is not about replacing people. It is about freeing your best people to do their best work.",
   sectionLabel: "THE AI AUTOMATION DEPARTMENT", sectionTitle: "Intelligent Automation That Scales Your Operations.",

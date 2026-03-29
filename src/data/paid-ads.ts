@@ -5,7 +5,7 @@ export const paidAdsData: ServicePageData = {
   heroHeadline: "Every Rupee Tracked.\nEvery Click Optimized.",
   heroSubtext: "Google Ads, Meta Ads, LinkedIn Campaigns, YouTube Ads, Programmatic Display — we build paid acquisition engines that scale profitably while your competitors burn budget.",
   heroVisualDesc: "Real-time ROAS dashboard showing campaign metrics, conversion funnels, and budget allocation.",
-  primaryCTA: "Get Free PPC Audit", secondaryCTA: "See PPC Results", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
+  primaryCTA: "Stop Wasting My Ad Budget", secondaryCTA: "See ROAS Results", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
   pullQuote: "You are spending on ads. But are you investing — or gambling?",
   problemText: "Most businesses waste 40-60% of their ad spend on irrelevant clicks, wrong audiences, and campaigns nobody is monitoring properly. The problem is not budget — it is strategy, tracking, and relentless optimization. Without a system, paid ads are just expensive noise.",
   sectionLabel: "THE PAID ADS DEPARTMENT", sectionTitle: "Performance Marketing That Actually Performs.",

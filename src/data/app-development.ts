@@ -5,7 +5,7 @@ export const appDevData: ServicePageData = {
   heroHeadline: "Apps That Users Love.\nApps That Businesses Need.",
   heroSubtext: "Native iOS, Android, React Native, Flutter — we build mobile applications that solve real problems, retain users, and generate revenue.",
   heroVisualDesc: "Mobile app screens showing onboarding flow, dashboard, and analytics.",
-  primaryCTA: "Discuss Your App", secondaryCTA: "See App Portfolio", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
+  primaryCTA: "Build My App Idea", secondaryCTA: "See App Portfolio", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
   pullQuote: "An app is not a feature list. It is a user experience that either hooks people or loses them in 30 seconds.",
   problemText: "80% of apps are abandoned after first use. The problem is not technology — it is product thinking. Without user research, UX strategy, and retention mechanics built in from day one, you are building expensive software nobody uses.",
   sectionLabel: "THE APP DEVELOPMENT DEPARTMENT", sectionTitle: "Mobile Apps Engineered for Retention & Revenue.",

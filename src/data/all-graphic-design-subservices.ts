@@ -1,7 +1,7 @@
 import { SubServicePageData } from "@/types/services";
 const P="graphic-design",N="Graphic Design";
 const mk=(s:string,n:string,t:string,hh:string,hs:string,pq:string,pt:string,wt:string,wi:{title:string,desc:string}[]):SubServicePageData=>({
-  parentSlug:P,parentName:N,slug:s,name:n,tagline:t,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Start Design Project",primaryCTALink:"/contact",pullQuote:pq,problemText:pt,whatWeDoTitle:wt,whatWeDoItems:wi,
+  parentSlug:P,parentName:N,slug:s,name:n,tagline:t,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Build My Brand Identity",primaryCTALink:"/contact",pullQuote:pq,problemText:pt,whatWeDoTitle:wt,whatWeDoItems:wi,
   processSteps:[{number:"01",title:"Brief",desc:"Creative brief and research."},{number:"02",title:"Concepts",desc:"3 design directions."},{number:"03",title:"Refine",desc:"Selected direction perfected."},{number:"04",title:"Deliver",desc:"Final files and guidelines."}],
   caseStudies:[{industry:"MULTI",client:"Various",result:"Award-winning designs",metrics:["Brand recognition improved","Client satisfaction 98%"],timeframe:"2-6 weeks"}],
   clientProfiles:[{label:"Profile 1",desc:"You need premium design that matches your business ambitions."}],

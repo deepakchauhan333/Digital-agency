@@ -5,7 +5,7 @@ export const webDevData: ServicePageData = {
   heroHeadline: "Sites That Convert,\nNot Just Look Good.",
   heroSubtext: "Custom websites, e-commerce platforms, web apps, CMS builds — we engineer digital experiences that drive business outcomes, not just impress designers.",
   heroVisualDesc: "Responsive website mockup showing conversion-optimized layout with analytics overlay.",
-  primaryCTA: "Get Free Web Audit", secondaryCTA: "See Portfolio", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
+  primaryCTA: "Get a Site That Converts", secondaryCTA: "See Portfolio", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
   pullQuote: "Your website is not a brochure. It is your hardest working employee — if it is built right.",
   problemText: "Most websites are built to look good at launch and then forgotten. No conversion tracking, no speed optimization, no content updates. A website without a growth strategy is just an expensive business card nobody reads.",
   sectionLabel: "THE WEB DEVELOPMENT DEPARTMENT", sectionTitle: "Websites Engineered for Growth.",

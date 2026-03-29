@@ -8,10 +8,19 @@
 .heroOrb1 { position: absolute; top: 5%; right: 10%; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(247,190,29,0.06), transparent 70%); filter: blur(80px); pointer-events: none; }
 .heroOrb2 { position: absolute; bottom: 10%; left: 5%; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(78,222,163,0.05), transparent 70%); filter: blur(80px); pointer-events: none; }
 
-.breadcrumb { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--on-surface-muted); margin-bottom: 2rem; }
+.breadcrumb {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.78rem;
+  color: var(--on-surface-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
 .breadcrumb a { color: var(--on-surface-muted); text-decoration: none; transition: color 0.15s; }
 .breadcrumb a:hover { color: var(--primary); }
-.breadcrumbCurrent { color: var(--on-surface); font-weight: 500; }
+.breadcrumbCurrent { color: var(--on-surface); font-weight: 600; }
 
 .heroGrid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 4rem; align-items: center; }
 .heroLeft { display: flex; flex-direction: column; gap: 1.5rem; }
@@ -180,14 +189,16 @@
   .capabilitiesGrid { grid-template-columns: 1fr; }
   .processGrid { grid-template-columns: 1fr; }
   .caseGrid { grid-template-columns: 1fr; }
-  .subGrid { grid-template-columns: 1fr; }
-  .hero { padding: 8rem 0 3rem; min-height: auto; }
-  .problem, .whatWeDo, .subServices, .process, .results, .whoFor, .faq, .ctaBlock { padding: 5rem 0; }
+  .subGrid { grid-template-columns: repeat(2, 1fr); }
+  /* .page already provides 4-5rem to clear navbar; hero adds only 1.5rem internally */
+  .hero { padding: 1.5rem 0 2.5rem; min-height: auto; }
+  .problem, .whatWeDo, .subServices, .process, .results, .whoFor, .faq, .ctaBlock { padding: 4rem 0; }
   .heroActions { flex-direction: column; align-items: flex-start; }
   .ctaActions { flex-direction: column; }
   .heroVisual { max-width: 100%; aspect-ratio: auto; min-height: 220px; }
   .visualCard { width: 90%; padding: 1.5rem; }
   .visualLabel { font-size: 1.5rem; }
+  .heroHeadline { font-size: clamp(2rem, 7vw, 3rem); }
 }
 
 @media (max-width: 480px) {

@@ -26,6 +26,19 @@
 
 .actions { display: flex; align-items: center; gap: 1.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
 
+/* Risk-reversal line — removes fear of commitment */
+.riskReversal {
+  font-size: 0.78rem;
+  color: var(--on-surface-muted);
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: -0.5rem;
+}
+.stars { color: #f7be1d; font-size: 0.85rem; letter-spacing: 0.05em; }
+
 .trust { display: flex; align-items: center; gap: 2rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--outline-ghost); }
 
 .trustItem { display: flex; flex-direction: column; gap: 0.125rem; }
@@ -55,15 +68,17 @@
 @media (max-width: 1024px) {
   .content { grid-template-columns: 1fr; gap: 3rem; }
   .right { display: flex; justify-content: center; }
-  .hero { padding-top: 8rem; min-height: auto; padding-bottom: 5rem; }
+  .hero { padding-top: 6.5rem; min-height: auto; padding-bottom: 3rem; }
   .dashboard { max-width: 100%; }
   .dashBody { min-height: 220px; }
 }
 
 @media (max-width: 640px) {
-  .trust { flex-wrap: wrap; gap: 1.5rem; }
+  .trust { flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1.5rem; padding-top: 1.5rem; }
   .trustDivider { display: none; }
-  .actions { flex-direction: column; align-items: flex-start; }
+  .trustNumber { font-size: 1.25rem; }
+  .actions { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .riskReversal { font-size: 0.72rem; }
   .dashBody { min-height: 180px; padding: 1rem; }
   .graph { height: 150px; }
   .metricCard { padding: 0.5rem 0.75rem; }

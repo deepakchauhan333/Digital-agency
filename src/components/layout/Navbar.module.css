@@ -46,8 +46,8 @@
 
 @media (max-width: 640px) {
   .logoImage {
-    width: 100px;
-    min-height: 25px;
+    width: 110px;
+    min-height: 32px;
   }
 }
 
@@ -227,6 +227,7 @@
     padding: 0 1rem;
   }
   .logoImage {
-    width: 90px;
+    width: 110px;
+    min-height: 30px;
   }
 }

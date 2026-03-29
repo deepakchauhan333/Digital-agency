@@ -81,6 +81,15 @@ export default function HeroSection() {
               See Our Results <span className="arrow">→</span>
             </Link>
           </motion.div>
+          {/* Risk-reversal — removes the fear of commitment */}
+          <motion.p
+            className={styles.riskReversal}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1.0 }}
+          >
+            <span className={styles.stars}>★★★★★</span> Rated by 200+ clients · No contracts · Free audit
+          </motion.p>
 
           {/* Trust Indicators */}
           <motion.div

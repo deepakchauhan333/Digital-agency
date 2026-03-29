@@ -5,7 +5,7 @@ export const graphicDesignData: ServicePageData = {
   heroHeadline: "Visual Identity That\nDemands Attention.",
   heroSubtext: "Brand identity, UI/UX design, social media creatives, packaging, motion graphics — we craft visual systems that make your brand impossible to ignore.",
   heroVisualDesc: "Brand identity components — logo variations, color palette, typography showcase.",
-  primaryCTA: "Start a Design Project", secondaryCTA: "See Portfolio", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
+  primaryCTA: "Build My Brand Identity", secondaryCTA: "See Portfolio", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
   pullQuote: "Your brand looks like everyone else. That is why nobody remembers you.",
   problemText: "Design is not decoration — it is strategy made visible. A logo from Fiverr, inconsistent social posts, and a templated website tell your customers you are not serious. Premium brands are built through intentional, systematic visual identity.",
   sectionLabel: "THE DESIGN DEPARTMENT", sectionTitle: "Design That Builds Brands, Not Just Graphics.",

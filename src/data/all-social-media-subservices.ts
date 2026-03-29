@@ -1,7 +1,7 @@
 import { SubServicePageData } from "@/types/services";
 const P="social-media",N="Social Media";
 const mk=(s:string,n:string,t:string,hh:string,hs:string,pq:string,pt:string,wt:string,wi:{title:string,desc:string}[]):SubServicePageData=>({
-  parentSlug:P,parentName:N,slug:s,name:n,tagline:t,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Get Social Audit",primaryCTALink:"/contact",
+  parentSlug:P,parentName:N,slug:s,name:n,tagline:t,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Grow My Audience Now",primaryCTALink:"/contact",
   pullQuote:pq,problemText:pt,whatWeDoTitle:wt,whatWeDoItems:wi,
   processSteps:[{number:"01",title:"Audit",desc:"Platform audit and audience analysis."},{number:"02",title:"Strategy",desc:"Content pillars and posting plan."},{number:"03",title:"Create & Publish",desc:"Content creation and scheduling."},{number:"04",title:"Engage & Report",desc:"Community management and analytics."}],
   caseStudies:[{industry:"D2C",client:"Various Brands",result:"Avg +280% engagement",metrics:["Follower growth 5-10x","Social-driven revenue increase"],timeframe:"6 months"}],

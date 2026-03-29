@@ -5,7 +5,7 @@ export const socialMediaData: ServicePageData = {
   heroHeadline: "Build Audiences\nThat Actually Buy.",
   heroSubtext: "Content strategy, community management, influencer marketing, viral campaigns — we turn social platforms into revenue channels, not vanity metrics.",
   heroVisualDesc: "Social analytics dashboard with engagement metrics, follower growth, and content performance.",
-  primaryCTA: "Get Social Media Audit", secondaryCTA: "See Results", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
+  primaryCTA: "Grow My Audience Now", secondaryCTA: "See Real Results", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
   pullQuote: "You are posting every day. But nobody is engaging, buying, or remembering you.",
   problemText: "Social media without strategy is just noise. Posting for the sake of posting creates content graveyards. Without audience research, content pillars, and conversion funnels built into your social strategy, you are entertaining — not selling.",
   sectionLabel: "THE SOCIAL MEDIA DEPARTMENT", sectionTitle: "Social Media That Drives Revenue, Not Just Likes.",

@@ -1,7 +1,7 @@
 import { SubServicePageData } from "@/types/services";
 const P = "paid-ads", N = "Paid Ads";
 const mk = (slug:string,name:string,tl:string,hh:string,hs:string,pq:string,pt:string,wt:string,wi:{title:string,desc:string}[]):SubServicePageData=>({
-  parentSlug:P,parentName:N,slug,name,tagline:tl,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Get Free PPC Audit",primaryCTALink:"/contact",
+  parentSlug:P,parentName:N,slug,name,tagline:tl,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Stop Wasting My Ad Budget",primaryCTALink:"/contact",
   pullQuote:pq,problemText:pt,whatWeDoTitle:wt,whatWeDoItems:wi,
   processSteps:[{number:"01",title:"Audit",desc:"Complete account and competitor audit."},{number:"02",title:"Strategy",desc:"Campaign architecture and targeting plan."},{number:"03",title:"Launch",desc:"Deploy with A/B tests."},{number:"04",title:"Optimize",desc:"Daily optimizations and weekly reports."}],
   caseStudies:[{industry:"MULTI",client:"Various Clients",result:"Avg 4.2x ROAS",metrics:["CPA reduced 40-60%","Quality scores improved"],timeframe:"3-6 months"}],

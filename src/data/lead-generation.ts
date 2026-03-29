@@ -5,7 +5,7 @@ export const leadGenData: ServicePageData = {
   heroHeadline: "Fill Your Pipeline.\nClose More Deals.",
   heroSubtext: "B2B lead generation, cold outreach, LinkedIn prospecting, email campaigns, landing page funnels — we build systems that deliver qualified leads consistently.",
   heroVisualDesc: "Lead pipeline dashboard showing qualified leads, conversion rates, and deal progress.",
-  primaryCTA: "Get Lead Gen Strategy", secondaryCTA: "See Results", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
+  primaryCTA: "Fill My Pipeline Now", secondaryCTA: "See Real Results", primaryCTALink: "/contact", secondaryCTALink: "/case-studies",
   pullQuote: "Your sales team is starving. Not because they cannot sell — because they do not have enough at-bats.",
   problemText: "Lead generation is not about volume. It is about putting your sales team in front of the right people at the right time with the right message. Random cold emails and bought lists do not work. Systems do.",
   sectionLabel: "THE LEAD GENERATION DEPARTMENT", sectionTitle: "Lead Generation That Feeds Your Sales Team Daily.",

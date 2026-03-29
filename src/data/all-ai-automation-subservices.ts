@@ -1,7 +1,7 @@
 import { SubServicePageData } from "@/types/services";
 const P="ai-automation",N="AI Automation";
 const mk=(s:string,n:string,t:string,hh:string,hs:string,pq:string,pt:string,wt:string,wi:{title:string,desc:string}[]):SubServicePageData=>({
-  parentSlug:P,parentName:N,slug:s,name:n,tagline:t,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Get Automation Audit",primaryCTALink:"/contact",pullQuote:pq,problemText:pt,whatWeDoTitle:wt,whatWeDoItems:wi,
+  parentSlug:P,parentName:N,slug:s,name:n,tagline:t,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Save 12 Hours a Week",primaryCTALink:"/contact",pullQuote:pq,problemText:pt,whatWeDoTitle:wt,whatWeDoItems:wi,
   processSteps:[{number:"01",title:"Process Audit",desc:"Map manual processes and identify opportunities."},{number:"02",title:"Design",desc:"Architecture and tool selection."},{number:"03",title:"Build",desc:"Develop and integrate automations."},{number:"04",title:"Monitor",desc:"Track performance and expand."}],
   caseStudies:[{industry:"MULTI",client:"Various",result:"Avg 30 hrs/week saved",metrics:["Response times reduced 90%","Error rates near zero"],timeframe:"4-8 weeks"}],
   clientProfiles:[{label:"Profile 1",desc:"You're spending too much time on repetitive tasks that could be automated."}],

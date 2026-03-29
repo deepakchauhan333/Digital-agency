@@ -1,7 +1,7 @@
 import { SubServicePageData } from "@/types/services";
 const P="lead-generation",N="Lead Generation";
 const mk=(s:string,n:string,t:string,hh:string,hs:string,pq:string,pt:string,wt:string,wi:{title:string,desc:string}[]):SubServicePageData=>({
-  parentSlug:P,parentName:N,slug:s,name:n,tagline:t,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Get Lead Gen Strategy",primaryCTALink:"/contact",pullQuote:pq,problemText:pt,whatWeDoTitle:wt,whatWeDoItems:wi,
+  parentSlug:P,parentName:N,slug:s,name:n,tagline:t,heroHeadline:hh,heroSubtext:hs,primaryCTA:"Fill My Pipeline Now",primaryCTALink:"/contact",pullQuote:pq,problemText:pt,whatWeDoTitle:wt,whatWeDoItems:wi,
   processSteps:[{number:"01",title:"ICP Definition",desc:"Define ideal customer profiles."},{number:"02",title:"Channel Strategy",desc:"Select outreach channels and messaging."},{number:"03",title:"Launch",desc:"Deploy campaigns and A/B test."},{number:"04",title:"Qualify & Deliver",desc:"Score leads and book meetings."}],
   caseStudies:[{industry:"B2B",client:"Various",result:"Avg 40+ qualified leads/month",metrics:["Reply rates 8-15%","Meeting booking rate 30%+"],timeframe:"2-3 months"}],
   clientProfiles:[{label:"Profile 1",desc:"Your sales pipeline is inconsistent and you need predictable lead flow."}],

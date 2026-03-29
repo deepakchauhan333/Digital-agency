@@ -9,7 +9,7 @@ export const seoPageData: ServicePageData = {
     "From technical architecture to programmatic scale — we engineer search visibility that compounds every month and builds permanent traffic moats your competitors cannot buy their way past.",
   heroVisualDesc:
     "Animated line graph rising steeply upward showing organic traffic growth. Floating keyword ranking badges showing positions #1, #2, #3.",
-  primaryCTA: "Get Free SEO Audit",
+  primaryCTA: "Claim My Free SEO Audit",
   secondaryCTA: "See SEO Results",
   primaryCTALink: "/contact",
   secondaryCTALink: "/case-studies",
