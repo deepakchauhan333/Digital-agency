@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getAllSubServiceParams } from "@/data/sub-service-registry";
 
-const BASE_URL = "https://www.allindiamarketingsolution.com";
+const BASE_URL = "https://www.digitalgrowpedia.com";
 
 const services = [
   "seo",

@@ -5,7 +5,7 @@ import { graphicDesignData } from "@/data/graphic-design";
 export const metadata: Metadata = {
   title: "Graphic Design — Brand Identity & Creative Design Agency",
   description: "Brand identity, logo design, UI/UX, motion graphics, packaging, social media creatives — visual systems that make your brand impossible to ignore. Award-winning designers.",
-  alternates: { canonical: "https://www.allindiamarketingsolution.com/services/graphic-design" },
+  alternates: { canonical: "https://www.digitalgrowpedia.com/services/graphic-design" },
   keywords: [
     "graphic design agency India", "brand identity design", "logo design services",
     "UI UX design agency", "motion graphics", "packaging design",
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     "print design", "marketing collateral", "illustration services",
   ],
   openGraph: {
-    title: "Graphic Design Agency — Brand Identity & Creatives | All India Marketing Solution",
+    title: "Graphic Design Agency — Brand Identity & Creatives | DigitalGrowPedia",
     description: "Brand identity, logo, UI/UX, motion graphics, packaging. Award-winning creative team.",
-    url: "https://www.allindiamarketingsolution.com/services/graphic-design",
+    url: "https://www.digitalgrowpedia.com/services/graphic-design",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "All India Marketing Solution Graphic Design Services" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "DigitalGrowPedia Graphic Design Services" }],
   },
 };
 

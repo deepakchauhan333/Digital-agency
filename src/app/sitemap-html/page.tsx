@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sitemap — All India Marketing Solution",
-  description: "Browse all pages on All India Marketing Solution. Find our services, case studies, blog posts, and company information.",
+  title: "Sitemap — DigitalGrowPedia",
+  description: "Browse all pages on DigitalGrowPedia. Find our services, case studies, blog posts, and company information.",
   alternates: { canonical: "/sitemap-html" },
   robots: { index: true, follow: true },
 };
@@ -48,7 +48,7 @@ export default function HTMLSitemapPage() {
       <div className="container">
         <h1 style={{ marginBottom: "0.5rem" }}>Sitemap</h1>
         <p style={{ marginBottom: "3rem", maxWidth: "60ch" }}>
-          A complete directory of all pages on All India Marketing Solution.
+          A complete directory of all pages on DigitalGrowPedia.
           Use this page to quickly find any section of our website.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2.5rem" }}>

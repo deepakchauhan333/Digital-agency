@@ -2,8 +2,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "All India Marketing Solution Privacy Policy. How we collect, use, and protect your personal information.",
-  alternates: { canonical: "https://www.allindiamarketingsolution.com/privacy" },
+  description: "DigitalGrowPedia Privacy Policy. How we collect, use, and protect your personal information.",
+  alternates: { canonical: "https://www.digitalgrowpedia.com/privacy" },
 };
 
 export default function PrivacyPage() {
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
         <p>You have the right to: access the personal data we hold about you; request correction or deletion of your data; opt out of marketing communications; and withdraw consent at any time.</p>
 
         <h2 style={{ fontSize: "1.25rem", margin: "2rem 0 0.75rem" }}>6. Contact Us</h2>
-        <p>For any privacy-related questions, contact us at <a href="mailto:privacy@allindiamarketingsolution.com">privacy@allindiamarketingsolution.com</a> or call +91 93521 07526.</p>
+        <p>For any privacy-related questions, contact us at <a href="mailto:privacy@digitalgrowpedia.com">privacy@digitalgrowpedia.com</a> or call +91 93521 07526.</p>
       </div>
     </div>
   );

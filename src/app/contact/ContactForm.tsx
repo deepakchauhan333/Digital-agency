@@ -39,7 +39,7 @@ export default function ContactForm() {
                     <Mail size={20} className={styles.infoIcon} />
                     <div>
                       <span className={styles.infoLabel}>Email</span>
-                      <a href="mailto:hello@allindiamarketingsolution.com">hello@allindiamarketingsolution.com</a>
+                      <a href="mailto:allindiamarketingsolution1@gmail.com">allindiamarketingsolution1@gmail.com</a>
                     </div>
                   </div>
                   <div className={styles.infoItem}>
@@ -53,7 +53,7 @@ export default function ContactForm() {
                     <MapPin size={20} className={styles.infoIcon} />
                     <div>
                       <span className={styles.infoLabel}>Location</span>
-                      <span>New Delhi, India</span>
+                      <span>Ashish Nagar, Murlipura Scheme, Jaipur, Rajasthan, 302039</span>
                     </div>
                   </div>
                   <div className={styles.infoItem}>

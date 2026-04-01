@@ -1,15 +1,15 @@
 import Script from "next/script";
 
-const BASE_URL = "https://www.allindiamarketingsolution.com";
+const BASE_URL = "https://www.digitalgrowpedia.com";
 
 // Organization Schema - appears on every page
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": `${BASE_URL}/#organization`,
-  name: "All India Marketing Solution",
+  name: "DigitalGrowPedia",
   url: BASE_URL,
-  logo: `${BASE_URL}/all%20india%20marketing%20solution%20(1).webp`,
+  logo: `${BASE_URL}/DGP logo.webp`,
   description: "India's most trusted digital growth agency. 8 departments, 80+ specialists, 200+ clients served.",
   foundingDate: "2020",
   numberOfEmployees: { "@type": "QuantitativeValue", value: 80 },
@@ -23,7 +23,7 @@ const organizationSchema = {
       "@type": "ContactPoint",
       telephone: "+91-93521-07526",
       contactType: "sales",
-      email: "hello@allindiamarketingsolution.com",
+      email: "allindiamarketingsolution1@gmail.com",
       areaServed: "IN",
       availableLanguage: ["English", "Hindi"],
     },
@@ -35,11 +35,11 @@ const organizationSchema = {
     addressCountry: "IN",
   },
   sameAs: [
-    "https://www.linkedin.com/company/allindiamarketingsolution",
-    "https://www.instagram.com/allindiamarketingsolution",
-    "https://twitter.com/allindiamarketingsolution",
-    "https://www.facebook.com/allindiamarketingsolution",
-    "https://www.youtube.com/@allindiamarketingsolution",
+    "https://www.linkedin.com/company/digitalgrowpedia",
+    "https://www.instagram.com/digitalgrowpedia",
+    "https://twitter.com/digitalgrowpedia",
+    "https://www.facebook.com/digitalgrowpedia",
+    "https://www.youtube.com/@digitalgrowpedia",
   ],
   knowsAbout: [
     "Search Engine Optimization",
@@ -60,7 +60,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${BASE_URL}/#website`,
-  name: "All India Marketing Solution",
+  name: "DigitalGrowPedia",
   url: BASE_URL,
   publisher: { "@id": `${BASE_URL}/#organization` },
   potentialAction: {
@@ -167,11 +167,11 @@ export function LocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": `${BASE_URL}/#localbusiness`,
-    name: "All India Marketing Solution",
-    image: `${BASE_URL}/all%20india%20marketing%20solution%20(1).webp`,
+    name: "DigitalGrowPedia",
+    image: `${BASE_URL}/DGP logo.webp`,
     url: BASE_URL,
     telephone: "+91-93521-07526",
-    email: "hello@allindiamarketingsolution.com",
+    email: "allindiamarketingsolution1@gmail.com",
     priceRange: "₹₹₹",
     address: {
       "@type": "PostalAddress",

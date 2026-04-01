@@ -29,7 +29,7 @@
 }
 
 .logoImage {
-  width: 104px;
+  width: 135px; /* Increased 30% from 104px */
   height: auto;
   min-height: 30px;
   display: block;
@@ -38,7 +38,7 @@
 
 @media (max-width: 640px) {
   .logoImage {
-    width: 95px;
+    width: 124px; /* Increased 30% from 95px */
     min-height: 32px;
   }
 }
@@ -219,7 +219,7 @@
     padding: 0 1rem;
   }
   .logoImage {
-    width: 95px;
+    width: 124px; /* Increased 30% from 95px */
     min-height: 30px;
   }
 }

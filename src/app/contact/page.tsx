@@ -2,14 +2,14 @@ import { Metadata } from "next";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Get a Free Digital Marketing Audit | All India Marketing Solution",
-  description: "Book a free 30-minute digital marketing consultation with All India Marketing Solution. Talk to an SEO, PPC, or social media specialist. New Delhi, India. Response within 4 hours.",
-  alternates: { canonical: "https://www.allindiamarketingsolution.com/contact" },
-  keywords: ["contact digital marketing agency India", "free SEO audit", "digital marketing consultation", "hire marketing agency", "All India Marketing Solution contact"],
+  title: "Contact Us — Get a Free Digital Marketing Audit | DigitalGrowPedia",
+  description: "Book a free 30-minute digital marketing consultation with DigitalGrowPedia. Talk to an SEO, PPC, or social media specialist. Ashish Nagar, Murlipura Scheme, Jaipur, Rajasthan, 302039. Response within 4 hours.",
+  alternates: { canonical: "https://www.digitalgrowpedia.com/contact" },
+  keywords: ["contact digital marketing agency India", "free SEO audit", "digital marketing consultation", "hire marketing agency", "DigitalGrowPedia contact"],
   openGraph: {
-    title: "Contact All India Marketing Solution — Free Growth Audit",
+    title: "Contact DigitalGrowPedia — Free Growth Audit",
     description: "Book a free 30-min consultation. Get an honest growth audit for your business.",
-    url: "https://www.allindiamarketingsolution.com/contact",
+    url: "https://www.digitalgrowpedia.com/contact",
     type: "website",
   },
 };

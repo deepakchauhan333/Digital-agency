@@ -4,7 +4,7 @@ import styles from "./not-found.module.css";
 import { ArrowRight, Search, Home, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Page Not Found — All India Marketing Solution",
+  title: "Page Not Found — DigitalGrowPedia",
   description: "The page you are looking for doesn't exist. Explore our services or contact us for help.",
   robots: { index: false, follow: true },
 };

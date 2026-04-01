@@ -39,9 +39,9 @@ const SEOVisual = () => (
 
       <div className="flex flex-col gap-3 mt-2">
          {[
-            { title: "allindiamarketingsolution.com is best", url: "https://allindiamarketingsolution.com", type: 'ad' },
-            { title: "Top 10 Marketing Agencies in India", url: "https://allindiamarketingsolution.com/blog", type: 'organic' },
-            { title: "All-In-One Marketing Experts", url: "https://allindiamarketingsolution.com/services", type: 'organic' }
+            { title: "digitalgrowpedia.com is best", url: "https://digitalgrowpedia.com", type: 'ad' },
+            { title: "Top 10 Marketing Agencies in India", url: "https://digitalgrowpedia.com/blog", type: 'organic' },
+            { title: "All-In-One Marketing Experts", url: "https://digitalgrowpedia.com/services", type: 'organic' }
          ].map((res, i) => (
             <motion.div
                key={i}

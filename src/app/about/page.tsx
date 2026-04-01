@@ -6,14 +6,14 @@ import { ArrowRight, Target, Users, BarChart3, Zap, Globe, Shield } from "lucide
 import styles from "./about.module.css";
 
 export const metadata: Metadata = {
-  title: "About All India Marketing Solution — Digital Marketing Agency Team India",
-  description: "8 specialized departments. 80+ marketing specialists. 200+ clients served. Learn about the team, values, and data-driven approach behind All India Marketing Solution.",
-  alternates: { canonical: "https://www.allindiamarketingsolution.com/about" },
-  keywords: ["about All India Marketing Solution", "digital marketing agency team India", "SEO specialists India", "marketing agency philosophy", "domain experts"],
+  title: "About DigitalGrowPedia — Digital Marketing Agency Team India",
+  description: "8 specialized departments. 80+ marketing specialists. 200+ clients served. Learn about the team, values, and data-driven approach behind DigitalGrowPedia.",
+  alternates: { canonical: "https://www.digitalgrowpedia.com/about" },
+  keywords: ["about DigitalGrowPedia", "digital marketing agency team India", "SEO specialists India", "marketing agency philosophy", "domain experts"],
   openGraph: {
-    title: "About All India Marketing Solution — Digital Marketing Agency India",
+    title: "About DigitalGrowPedia — Digital Marketing Agency India",
     description: "8 departments. 80+ specialists. 200+ clients. Meet the team behind the growth.",
-    url: "https://www.allindiamarketingsolution.com/about",
+    url: "https://www.digitalgrowpedia.com/about",
     type: "website",
   },
 };
@@ -58,7 +58,7 @@ export default function AboutPage() {
               <span className="text-gradient-gold">We Are a Growth Engine.</span>
             </h1>
             <p className={styles.heroSubtext}>
-              All India Marketing Solution was built on a simple frustration — agencies that talk big and deliver small.
+              DigitalGrowPedia was built on a simple frustration — agencies that talk big and deliver small.
               We decided to build the agency we always wished existed: specialists-only, data-obsessed,
               and relentlessly focused on measurable outcomes.
             </p>

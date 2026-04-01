@@ -48,8 +48,8 @@ export default function Navbar() {
           <Link href="/" className={styles.logo}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-              src="/all%20india%20marketing%20solution%20(1).webp" 
-              alt="All India Marketing Solution" 
+              src="/DGP logo.webp" 
+              alt="DigitalGrowPedia" 
               className={styles.logoImage}
             />
           </Link>

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = getSubServiceData(service, subService);
   if (!data) return { title: "Not Found" };
 
-  const BASE = "https://www.allindiamarketingsolution.com";
+  const BASE = "https://www.digitalgrowpedia.com";
   const canonicalUrl = `${BASE}/services/${service}/${subService}`;
   // Title: focus keyword first for maximum SEO weight
   const titleFocus = `${data.name} Services India`;
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : data.heroSubtext;
 
   return {
-    title: `${titleFocus} — ${data.parentName} Agency | All India Marketing Solution`,
+    title: `${titleFocus} — ${data.parentName} Agency | DigitalGrowPedia`,
     description,
     alternates: { canonical: canonicalUrl },
     keywords: [
@@ -36,10 +36,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       data.parentName,
       `${data.parentName} services India`,
       `${data.parentName} company India`,
-      "All India Marketing Solution",
+      "DigitalGrowPedia",
     ],
     openGraph: {
-      title: `${data.name} — ${data.parentName} | All India Marketing Solution`,
+      title: `${data.name} — ${data.parentName} | DigitalGrowPedia`,
       description,
       url: canonicalUrl,
       type: "website",

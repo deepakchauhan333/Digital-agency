@@ -5,7 +5,7 @@ import { leadGenData } from "@/data/lead-generation";
 export const metadata: Metadata = {
   title: "Lead Generation — B2B & Multi-Channel Lead Gen Agency",
   description: "B2B lead generation, cold email outreach, LinkedIn prospecting, appointment setting, landing page funnels — 47+ qualified meetings per month avg. Get free pipeline audit.",
-  alternates: { canonical: "https://www.allindiamarketingsolution.com/services/lead-generation" },
+  alternates: { canonical: "https://www.digitalgrowpedia.com/services/lead-generation" },
   keywords: [
     "B2B lead generation India", "cold email agency", "LinkedIn lead generation",
     "appointment setting services", "lead nurturing", "landing page funnels",
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     "demand generation", "inbound lead generation", "sales acceleration",
   ],
   openGraph: {
-    title: "Lead Generation — B2B & Multi-Channel | All India Marketing Solution",
+    title: "Lead Generation — B2B & Multi-Channel | DigitalGrowPedia",
     description: "B2B lead gen, cold email, LinkedIn prospecting, appointment setting. 47+ qualified meetings/month avg.",
-    url: "https://www.allindiamarketingsolution.com/services/lead-generation",
+    url: "https://www.digitalgrowpedia.com/services/lead-generation",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "All India Marketing Solution Lead Generation Agency" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "DigitalGrowPedia Lead Generation Agency" }],
   },
 };
 

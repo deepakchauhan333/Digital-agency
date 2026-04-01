@@ -16,7 +16,7 @@
 
 .logo { display: flex; flex-direction: column; line-height: 1; margin-bottom: 0.5rem; }
 .footerLogo {
-  width: 156px;
+  width: 203px; /* Increased 30% from 156px */
   height: auto;
   min-height: 45px;
   display: block;

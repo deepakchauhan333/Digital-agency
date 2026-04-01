@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import BackToTop from "@/components/layout/BackToTop";
 import WhatsAppWidget from "@/components/layout/WhatsAppWidget";
+import LeadPopup from "@/components/layout/LeadPopup";
 import SmoothScroll from "@/components/providers/SmoothScroll";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import {
@@ -11,7 +12,7 @@ import {
   LocalBusinessSchema,
 } from "@/components/seo/SchemaMarkup";
 
-const BASE_URL = "https://www.allindiamarketingsolution.com";
+const BASE_URL = "https://www.digitalgrowpedia.com";
 
 /* ============================================
    VIEWPORT — Separated from metadata (Next.js 14+ best practice)
@@ -35,19 +36,19 @@ export const metadata: Metadata = {
   // Title template — all child pages inherit
   title: {
     default:
-      "All India Marketing Solution — Digital Marketing Agency India",
-    template: "%s | All India Marketing Solution",
+      "DigitalGrowPedia — Digital Marketing Agency India",
+    template: "%s | DigitalGrowPedia",
   },
 
   // Meta description — under 155 chars, keyword-rich
   description:
-    "All India Marketing Solution — expert digital marketing agency in India. SEO, PPC, Social Media, Web & App Development, AI Automation, Lead Generation. 200+ clients. 80+ specialists. Measurable ROI.",
+    "DigitalGrowPedia — expert digital marketing agency in India. SEO, PPC, Social Media, Web & App Development, AI Automation, Lead Generation. 200+ clients. 80+ specialists. Measurable ROI.",
 
   // Keywords — comprehensive, LSI-enriched
   keywords: [
     "digital marketing agency India",
     "best marketing agency India",
-    "All India Marketing Solution",
+    "DigitalGrowPedia",
     "SEO services India",
     "PPC management agency",
     "social media marketing company",
@@ -68,9 +69,9 @@ export const metadata: Metadata = {
   ],
 
   // Publisher & authorship — E-E-A-T signals
-  authors: [{ name: "All India Marketing Solution", url: BASE_URL }],
-  creator: "All India Marketing Solution",
-  publisher: "All India Marketing Solution",
+  authors: [{ name: "DigitalGrowPedia", url: BASE_URL }],
+  creator: "DigitalGrowPedia",
+  publisher: "DigitalGrowPedia",
 
   // Favicon / icons — webp takes priority, ico as fallback
   icons: {
@@ -99,8 +100,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     alternateLocale: ["en_US"],
-    siteName: "All India Marketing Solution",
-    title: "All India Marketing Solution — India's Best Digital Marketing Agency",
+    siteName: "DigitalGrowPedia",
+    title: "DigitalGrowPedia — India's Best Digital Marketing Agency",
     description:
       "8 specialized departments. 80+ services. 200+ clients. SEO, PPC, Social Media, Web Dev, AI Automation & more. Real results, not promises.",
     url: BASE_URL,
@@ -109,7 +110,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "All India Marketing Solution — Digital Marketing Agency India",
+        alt: "DigitalGrowPedia — Digital Marketing Agency India",
         type: "image/png",
       },
     ],
@@ -118,9 +119,9 @@ export const metadata: Metadata = {
   // Twitter / X cards
   twitter: {
     card: "summary_large_image",
-    site: "@allindiamarketingsolution",
-    creator: "@allindiamarketingsolution",
-    title: "All India Marketing Solution — Digital Marketing Agency India",
+    site: "@digitalgrowpedia",
+    creator: "@digitalgrowpedia",
+    title: "DigitalGrowPedia — Digital Marketing Agency India",
     description:
       "India's best digital marketing agency. SEO, Paid Ads, Social Media, Web Dev, AI Automation & more.",
     images: ["/og-image.png"],
@@ -203,7 +204,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
 
         {/* IndexNow key file reference */}
-        <meta name="indexnow-key" content="allindiamarketingsolution" />
+        <meta name="indexnow-key" content="digitalgrowpedia" />
       </head>
       <body>
         {/* Structured Data (JSON-LD) — injected before content */}
@@ -216,6 +217,7 @@ export default function RootLayout({
           <main id="main-content" role="main">
             {children}
           </main>
+          <LeadPopup />
           <WhatsAppWidget />
           <Footer />
           <BackToTop />

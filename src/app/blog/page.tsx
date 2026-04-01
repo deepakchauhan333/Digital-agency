@@ -6,8 +6,8 @@ import styles from "./blog.module.css";
 
 export const metadata: Metadata = {
   title: "Blog — Digital Marketing Insights, SEO Tips & Growth Strategies",
-  description: "Actionable digital marketing insights from All India Marketing Solution's team of 80+ specialists. SEO guides, paid ads strategies, social media tips, web development best practices.",
-  alternates: { canonical: "https://www.allindiamarketingsolution.com/blog" },
+  description: "Actionable digital marketing insights from DigitalGrowPedia's team of 80+ specialists. SEO guides, paid ads strategies, social media tips, web development best practices.",
+  alternates: { canonical: "https://www.digitalgrowpedia.com/blog" },
   keywords: ["digital marketing blog", "SEO tips", "PPC strategies", "social media marketing tips", "web development blog", "growth hacking", "marketing automation"],
 };
 

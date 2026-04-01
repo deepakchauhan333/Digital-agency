@@ -21,12 +21,12 @@ export const metadata: Metadata = {
   keywords: [
     "digital marketing services", "SEO services", "PPC management",
     "social media marketing", "web development", "app development",
-    "graphic design", "AI automation", "lead generation", "All India Marketing Solution services",
+    "graphic design", "AI automation", "lead generation", "DigitalGrowPedia services",
   ],
   openGraph: {
-    title: "All Services — 8 Departments, 80+ Specializations | All India Marketing Solution",
+    title: "All Services — 8 Departments, 80+ Specializations | DigitalGrowPedia",
     description: "Full-stack digital growth. SEO, Paid Ads, Social Media, Dev, Design, AI, Lead Gen.",
-    url: "https://www.allindiamarketingsolution.com/services",
+    url: "https://www.digitalgrowpedia.com/services",
     type: "website",
   },
 };

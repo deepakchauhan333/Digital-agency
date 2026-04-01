@@ -31,8 +31,8 @@ export default function Footer() {
           <div className={styles.logo}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-              src="/all%20india%20marketing%20solution%20(1).webp" 
-              alt="All India Marketing Solution" 
+              src="/DGP logo.webp" 
+              alt="DigitalGrowPedia" 
               className={styles.footerLogo}
             />
           </div>
@@ -81,9 +81,9 @@ export default function Footer() {
         <div className={styles.column}>
           <h4 className={styles.columnTitle}>Get In Touch</h4>
           <ul className={styles.columnList}>
-            <li><a href="mailto:hello@allindiamarketingsolution.com">hello@allindiamarketingsolution.com</a></li>
+            <li><a href="mailto:allindiamarketingsolution1@gmail.com">allindiamarketingsolution1@gmail.com</a></li>
             <li><a href="tel:+919352107526">+91 93521 07526</a></li>
-            <li>New Delhi, India</li>
+            <li>Ashish Nagar, Murlipura Scheme, Jaipur, Rajasthan, 302039</li>
           </ul>
           <Link href="/contact" className="btn btn-primary" style={{ marginTop: "1.5rem" }}>
             Book a Call →
@@ -93,7 +93,7 @@ export default function Footer() {
 
       <div className={styles.bottom}>
         <div className={styles.bottomInner}>
-          <p>© 2026 All India Marketing Solution. All rights reserved.</p>
+          <p>© 2026 DigitalGrowPedia. All rights reserved.</p>
           <div className={styles.bottomLinks}>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>
