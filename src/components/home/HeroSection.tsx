@@ -75,7 +75,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             <Link href="/contact" className="btn btn-primary">
-              Get Free Growth Audit <ArrowRight size={18} />
+              Grow Your Business Now <ArrowRight size={18} />
             </Link>
             <Link href="/case-studies" className="btn btn-ghost">
               See Our Results <span className="arrow">→</span>

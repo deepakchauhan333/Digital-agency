@@ -7,6 +7,7 @@ import WhatsAppWidget from "@/components/layout/WhatsAppWidget";
 import LeadPopup from "@/components/layout/LeadPopup";
 import SmoothScroll from "@/components/providers/SmoothScroll";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import Script from "next/script";
 import {
   GlobalSchemaMarkup,
   LocalBusinessSchema,
@@ -144,7 +145,7 @@ export const metadata: Metadata = {
 
   // Google Search Console verification
   verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
+    google: "IuFVE0G-i4lfAxYpiiNTsHkKM20gdUEzZu4pvzLgNnk",
     yandex: "YOUR_YANDEX_VERIFICATION_CODE",
     // Bing verification is also supported
   },
@@ -207,6 +208,21 @@ export default function RootLayout({
         <meta name="indexnow-key" content="digitalgrowpedia" />
       </head>
       <body>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-HGN1Q5YJ8Z"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HGN1Q5YJ8Z');
+          `}
+        </Script>
+
         {/* Structured Data (JSON-LD) — injected before content */}
         <GlobalSchemaMarkup />
         <LocalBusinessSchema />

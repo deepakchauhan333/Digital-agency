@@ -158,31 +158,32 @@ export default function LeadPopup() {
         timestamp: new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
       };
 
-      const res = await fetch("/api/lead", {
+      const fetchPromise = fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
+        keepalive: true,
       });
 
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error || "Failed to submit lead");
-      }
-
-      // Success state
-      setIsSuccess(true);
-      sessionStorage.setItem("dgp_popup_v3_final", "true"); // Permanently block after submit
-
-      // Auto close after 2 seconds on success
+      // Optimistic UI update: Wait just a tiny bit to feel "real" then show success
       setTimeout(() => {
-        closePopup();
-      }, 2500);
+        setIsSuccess(true);
+        setIsSubmitting(false);
+        sessionStorage.setItem("dgp_popup_v3_final", "true"); // Permanently block after submit
 
+        // Auto close after 2.5 seconds on success
+        setTimeout(() => {
+          closePopup();
+        }, 2500);
+      }, 800);
+
+      const res = await fetchPromise;
+      if (!res.ok) {
+        const data = await res.json();
+        console.error("Background lead submission error:", data);
+      }
     } catch (err: any) {
-      setErrorMsg(err.message || "An unexpected error occurred. Please try again.");
-    } finally {
-      setIsSubmitting(false);
+      console.error("Failed to submit lead in background:", err);
     }
   };
 

@@ -24,7 +24,7 @@ export default function CTASection() {
             </p>
             <div className={styles.actions}>
               <Link href="/contact" className="btn btn-primary">
-                Get Free Growth Audit <ArrowRight size={18} />
+                Grow Your Business Now <ArrowRight size={18} />
               </Link>
               <Link href="/case-studies" className="btn btn-ghost">
                 Or see our results first <span className="arrow">→</span>
