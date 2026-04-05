@@ -83,6 +83,7 @@ export default function Navbar() {
                 )}
               </AnimatePresence>
             </div>
+            <Link href="/pricing" className={styles.navLink}>Pricing</Link>
             <Link href="/about" className={styles.navLink}>About</Link>
             <Link href="/case-studies" className={styles.navLink}>Case Studies</Link>
             <Link href="/blog" className={styles.navLink}>Blog</Link>
@@ -130,6 +131,7 @@ export default function Navbar() {
                   </Link>
                 ))}
               </div>
+              <Link href="/pricing" className={styles.mobileLink} onClick={() => setIsMobileOpen(false)}>Pricing</Link>
               <Link href="/about" className={styles.mobileLink} onClick={() => setIsMobileOpen(false)}>About</Link>
               <Link href="/case-studies" className={styles.mobileLink} onClick={() => setIsMobileOpen(false)}>Case Studies</Link>
               <Link href="/blog" className={styles.mobileLink} onClick={() => setIsMobileOpen(false)}>Blog</Link>

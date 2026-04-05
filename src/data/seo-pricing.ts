@@ -1,0 +1,1122 @@
+export const seoServices = [
+  {
+    "num": "01",
+    "title": "Technical SEO Cleanups",
+    "subtitle": "Stop bleeding traffic due to hidden site speed limits, crawl errors, and algorithmic\n                            roadblocks.",
+    "tiers": [
+      {
+        "tierName": "Essential Fixes",
+        "price": "₹8,000",
+        "duration": "/ Month",
+        "target": "👤 Broken/New Sites",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Audit 10 core pages for errors",
+          "Fix 5 broken internal links (404 errors)",
+          "Setup 1 XML sitemap for Google",
+          "Check mobile loading speed for 5 pages",
+          "Setup Google Search Console properly",
+          "Add basic Schema code on homepage",
+          "Optimize size for 10 heavy images",
+          "Fix basic SSL/HTTPS security issues",
+          "Fix 5 text rendering block issues",
+          "Provide 1 Monthly technical health report"
+        ]
+      },
+      {
+        "tierName": "Professional Audit",
+        "price": "₹18,000",
+        "duration": "/ Month",
+        "target": "👤 Stagnant Traffic",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Audit 50 pages for deep errors",
+          "Fix 20 broken internal links (404s)",
+          "Setup 2 XML sitemaps (Blog & Pages)",
+          "Improve load speed under 3 seconds",
+          "Fix Core Web Vitals for homepage",
+          "Fix 10 redirect loops (301 chains)",
+          "Add advanced Schema to 5 pages",
+          "Minify and clean CSS/JS files",
+          "Compress up to 50 website images",
+          "Fix 20 pagination/category errors",
+          "Monthly technical health check call",
+          "Priority email support for website issues"
+        ]
+      },
+      {
+        "tierName": "Advanced Recovery",
+        "price": "₹35,000",
+        "duration": "/ Month",
+        "target": "🏢 Algorithmic Drops",
+        "isPopular": true,
+        "popularBadge": "Risk Mitigation",
+        "deliverables": [
+          "Audit 200+ pages for technical drops",
+          "Disavow up to 50 spam links with Google",
+          "Fix Canonical tags for 50 pages",
+          "Deep Server log analysis for crawl waste",
+          "Fix heavy JavaScript loading issues",
+          "Setup Cloudflare CDN for fast loading",
+          "Fix Hreflang tags for 2 languages/regions",
+          "Improve load speed under 2 seconds",
+          "Create a custom 404 error rescue page",
+          "Fix 50+ Google Search Console crawl errors",
+          "Daily website uptime monitoring setup",
+          "Add exact Schema markup for 20 pages",
+          "Bi-weekly technical audit tracking",
+          "Direct WhatsApp support for tech issues"
+        ]
+      },
+      {
+        "tierName": "Enterprise Armor",
+        "price": "₹60,000+",
+        "duration": "/ Month",
+        "target": "🏢 High-Risk Assets",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Audit 1000+ pages for massive sites",
+          "Weekly spam link monitoring and removal",
+          "Custom server speed optimization",
+          "Fix multi-domain indexing conflicts",
+          "Execute advanced bulk SEO issue resolution",
+          "Setup advanced edge caching (Cloudflare)",
+          "Advanced website security & SSL fixes",
+          "Write automated 404 redirect rules",
+          "Full flawless website migration support",
+          "Setup dynamic automated Schema generation",
+          "Continuous Google crawl budget tracking",
+          "Fix 3rd-party API loading delays",
+          "Dedicated technical SEO project manager",
+          "Advanced Looker Studio technical dashboard",
+          "24/7 priority phone support for outages"
+        ]
+      }
+    ]
+  },
+  {
+    "num": "02",
+    "title": "On-Page & Semantic SEO",
+    "subtitle": "Fix keyword cannibalization, prune dead content, and establish unshakeable E-E-A-T trust\n                            signals.",
+    "tiers": [
+      {
+        "tierName": "Starter",
+        "price": "₹5,000",
+        "duration": "/ Month",
+        "target": "👤 Low Conversion",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Research 5 highly profitable Keywords",
+          "Optimize 5 Pages for target keywords",
+          "Write and update 5 Meta Titles",
+          "Write and update 5 Meta Descriptions",
+          "Fix missing or duplicate H1/H2 tags",
+          "Add 10 strategic internal links",
+          "Write proper Alt text for 5 images",
+          "Check 1 competitor page for gaps",
+          "Fix basic grammar formatting on 5 pages",
+          "Provide 1 Monthly ranking progress report"
+        ]
+      },
+      {
+        "tierName": "Growth",
+        "price": "₹15,000",
+        "duration": "/ Month",
+        "target": "👤 Keyword Clashing",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Research 20 highly profitable Keywords",
+          "Optimize 20 Pages for target keywords",
+          "Write and update 20 Meta Titles",
+          "Write and update 20 Meta Descriptions",
+          "Fix all H1/H2/H3 tags for 20 pages",
+          "Add 50 strategic internal links between posts",
+          "Write proper Alt text for 50 images",
+          "Add E-E-A-T trust signals (like Author bios)",
+          "Check 3 competitor pages for content gaps",
+          "Fix keyword cannibalization (up to 5 pages)",
+          "Add LSI (related) keywords in your content",
+          "Provide 2 Monthly ranking progress reports"
+        ]
+      },
+      {
+        "tierName": "Advanced",
+        "price": "₹32,000",
+        "duration": "/ Month",
+        "target": "🏢 Dropping Ranks",
+        "isPopular": true,
+        "popularBadge": "Content Domination",
+        "deliverables": [
+          "Research 50 highly profitable Keywords",
+          "Optimize 50 Pages for target keywords",
+          "Write and update 50 Meta Titles",
+          "Write and update 50 Meta Descriptions",
+          "Create full internal linking Silo structure",
+          "Add 150+ strategic internal links",
+          "Write proper Alt text for 100+ images",
+          "Optimize 10 pages for Google Featured Snippets",
+          "Optimize 10 pages for Voice Search intent",
+          "Setup full E-E-A-T company trust profile",
+          "Merge or delete 10 thin/useless pages",
+          "Fix and redirect bad URL slugs for 20 pages",
+          "Full keyword gap analysis report",
+          "Bi-weekly detailed ranking and traffic reports"
+        ]
+      },
+      {
+        "tierName": "Enterprise",
+        "price": "₹55,000+",
+        "duration": "/ Month",
+        "target": "🏢 Mass Content Assets",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Research 150+ highly profitable Keywords",
+          "Optimize 200+ Pages for target keywords",
+          "Bulk write and update Meta Titles",
+          "Bulk write and update Meta Descriptions",
+          "A/B test 20 Meta Titles for better clicks",
+          "Create 10 massive Pillar content hubs",
+          "Add 500+ automated/manual internal links",
+          "Full multi-language On-page SEO fix",
+          "Bulk Alt text optimization for core images",
+          "Optimize 50 pages for Google Featured Snippets",
+          "Map out custom Search Intent for all pages",
+          "Rewrite and refresh 50 old, dead blog posts",
+          "Create verified author entity pages for trust",
+          "Dedicated Content SEO Manager",
+          "Advanced Looker Studio ROI dashboard"
+        ]
+      }
+    ]
+  },
+  {
+    "num": "03",
+    "title": "Off-Page & Link Defense",
+    "subtitle": "Stop negative SEO attacks, reclaim lost authority, and steal your competitors' strongest\n                            referring domains.",
+    "tiers": [
+      {
+        "tierName": "Starter",
+        "price": "₹8,500",
+        "duration": "/ Month",
+        "target": "👤 Low Authority",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Check 100 current website backlinks",
+          "Disavow (remove) 10 toxic spam links",
+          "Build 5 safe Web 2.0 property links",
+          "Build 5 high-trust Profile links",
+          "Create 2 Social bookmarking links",
+          "Submit business to 5 local directories",
+          "Check 1 competitor's backlink profile",
+          "Submit 1 basic Press Release (PR)",
+          "Fix 5 broken brand mention links",
+          "Provide 1 Monthly link building report"
+        ]
+      },
+      {
+        "tierName": "Growth",
+        "price": "₹22,000",
+        "duration": "/ Month",
+        "target": "👤 Stalled Rankings",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Check 500 current website backlinks",
+          "Disavow (remove) 50 toxic spam links",
+          "Build 10 High DA (Domain Authority) links",
+          "Publish 2 Guest Posts on real industry blogs",
+          "Secure 2 Niche Edit links in old articles",
+          "Pitch 5 HARO/Media answers for news links",
+          "Submit business to 10 local directories",
+          "Check 3 competitors for link gaps",
+          "Steal 5 links your competitors have",
+          "Share content on 10 social media profiles",
+          "Reclaim 5 lost or broken backlinks",
+          "Provide Bi-weekly link building reports"
+        ]
+      },
+      {
+        "tierName": "Advanced",
+        "price": "₹45,000",
+        "duration": "/ Month",
+        "target": "🏢 High Competition",
+        "isPopular": true,
+        "popularBadge": "Offensive Strategy",
+        "deliverables": [
+          "Check 2000+ current website backlinks",
+          "Disavow (remove) 150 toxic spam links",
+          "Build 30 High DA (Domain Authority) links",
+          "Publish 5 Premium Guest Posts on big blogs",
+          "Secure 5 High-traffic Niche Edit links",
+          "Pitch 15 HARO/Media answers for news links",
+          "Run 2 Skyscraper email outreach campaigns",
+          "Find and claim 50 unlinked brand mentions",
+          "Targeted outreach to secure Podcast interviews",
+          "Secure 2 Editorial links from journalists",
+          "Steal 20 high-value competitor links",
+          "Custom email outreach to 100 bloggers",
+          "Monthly Premium PR distribution",
+          "Direct WhatsApp strategy group"
+        ]
+      },
+      {
+        "tierName": "Enterprise",
+        "price": "₹80,000+",
+        "duration": "/ Month",
+        "target": "🏢 Market Leaders",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Continuous enterprise backlink monitoring",
+          "Weekly spam link monitoring and disavow",
+          "Build 100+ Premium High DA links",
+          "Publish 15 Premium Guest Posts (DA 60+)",
+          "Secure 20 High-traffic Niche Edit links",
+          "Pitch 50 HARO/Media answers for news links",
+          "Run 5 Skyscraper email outreach campaigns",
+          "Find and claim 200 unlinked brand mentions",
+          "Aggressive podcast outreach for executive features",
+          "Secure 10 Editorial/News links from journalists",
+          "Steal 50+ high-value competitor links",
+          "High-tier Wikipedia brand citation strategy",
+          "Targeted syndication to industry news sites",
+          "Dedicated Link Building Outreach Manager",
+          "Advanced Looker Studio link tracking dashboard"
+        ]
+      }
+    ]
+  },
+  {
+    "num": "04",
+    "title": "Local SEO & Map Pack Control",
+    "subtitle": "Destroy fake competitor listings, fix massive NAP inconsistencies, and capture hyper-local\n                            foot traffic.",
+    "tiers": [
+      {
+        "tierName": "Starter",
+        "price": "₹7,000",
+        "duration": "/ Month",
+        "target": "📍 Invisible Locally",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Setup 1 Google My Business (GMB) profile",
+          "Verify 1 GMB profile ownership",
+          "Fix Name, Address, Phone (NAP) details",
+          "Write 1 optimized GMB description",
+          "Upload 5 geo-tagged GMB photos",
+          "Create 2 GMB update posts per month",
+          "Submit business to 10 Local Directories",
+          "Reply to 5 Google customer reviews",
+          "Add basic Local Schema code to website",
+          "Provide 1 Monthly Local Map rank report"
+        ]
+      },
+      {
+        "tierName": "Growth",
+        "price": "₹18,000",
+        "duration": "/ Month",
+        "target": "📍 Outranked by Spam",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Manage up to 3 GMB branch profiles",
+          "Fix NAP errors across the entire web",
+          "Write 3 optimized GMB descriptions",
+          "Upload 15 geo-tagged GMB photos",
+          "Create 5 GMB update posts per month",
+          "Submit business to 30 Local Directories",
+          "Reply to 20 Google customer reviews",
+          "Setup SMS/Email Review generation system",
+          "Add Advanced Local Schema code to website",
+          "Report and remove fake competitor listings",
+          "Track 10 local keywords on Google Maps",
+          "Provide Bi-weekly Local rank report"
+        ]
+      },
+      {
+        "tierName": "Advanced",
+        "price": "₹40,000",
+        "duration": "/ Month",
+        "target": "📍 Regional Bleed",
+        "isPopular": true,
+        "popularBadge": "Map Dominance",
+        "deliverables": [
+          "Manage up to 10 GMB branch profiles",
+          "Full NAP consistency audit & cleanup",
+          "Upload 30 geo-tagged GMB photos/videos",
+          "Create 10 GMB update posts per month",
+          "Submit business to 80 Local Directories",
+          "Reply to 50 Google customer reviews",
+          "Setup automated Review collection funnel",
+          "Create 5 City-targeted website landing pages",
+          "Remove 5 fake competitor maps entirely",
+          "Build 10 high-quality local backlinks",
+          "Optimize GMB Questions & Answers (Q&A)",
+          "Track 30 local keywords on Google Maps",
+          "Geo-grid map rank tracking visualization",
+          "Direct WhatsApp support for local updates"
+        ]
+      },
+      {
+        "tierName": "Enterprise",
+        "price": "₹75,000+",
+        "duration": "/ Month",
+        "target": "📍 Franchise Chaos",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Manage 50+ GMB franchise profiles",
+          "Enterprise local aggregator submissions",
+          "Upload 100+ geo-tagged GMB photos/videos",
+          "Create 30 GMB update posts per month",
+          "Submit business to 200+ Local Directories",
+          "Reply to 200+ Google customer reviews",
+          "Comprehensive review sentiment tracking",
+          "Create 20+ City-targeted website landing pages",
+          "Aggressive fake competitor removal campaigns",
+          "Build 50 high-quality local backlinks",
+          "Full franchise location data synchronization",
+          "Track 100+ local keywords on Google Maps",
+          "Dedicated Local SEO Franchise Manager",
+          "Quarterly store visit & photo strategy",
+          "Advanced local ROI & traffic dashboard"
+        ]
+      }
+    ]
+  },
+  {
+    "num": "05",
+    "title": "Programmatic Scaling",
+    "subtitle": "Prevent thin-content algorithmic penalties while scaling to thousands of intent-matched\n                            variations.",
+    "tiers": [
+      {
+        "tierName": "Starter",
+        "price": "₹12,000",
+        "duration": "/ Month",
+        "target": "⚡ Scaling Errors",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Find 50 long-tail programmatic keywords",
+          "Group keywords into 5 tight clusters",
+          "Design 1 SEO-friendly page template",
+          "Setup basic Google Sheet for data storage",
+          "Generate 50 programmatic web pages",
+          "Write 1 master content template for pages",
+          "Add 5 dynamic variables (like City/Service)",
+          "Add basic dynamic Meta Titles & Tags",
+          "Setup 1 dynamic XML sitemap for Google",
+          "Track Google indexing of the 50 pages"
+        ]
+      },
+      {
+        "tierName": "Growth",
+        "price": "₹28,000",
+        "duration": "/ Month",
+        "target": "⚡ Index Bloat Risks",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Find 200 long-tail programmatic keywords",
+          "Group keywords into 20 tight clusters",
+          "Design 3 SEO-friendly page templates",
+          "Setup advanced Airtable database",
+          "Generate 200 programmatic web pages",
+          "Write 3 master content templates",
+          "Add 10 dynamic variables to content",
+          "Add dynamic Schema markup to pages",
+          "Add dynamic internal links between pages",
+          "Fix orphan programmatic pages (no links)",
+          "Track Google indexing of 200 pages",
+          "Provide Bi-weekly index & ranking report"
+        ]
+      },
+      {
+        "tierName": "Advanced",
+        "price": "₹50,000",
+        "duration": "/ Month",
+        "target": "⚡ SaaS & Directories",
+        "isPopular": true,
+        "popularBadge": "Massive Scale",
+        "deliverables": [
+          "Find 1000 long-tail programmatic keywords",
+          "Group keywords into 50 tight clusters",
+          "Design 5 SEO-friendly page templates",
+          "Advanced data structuring for SEO scaling",
+          "Generate 1000 programmatic web pages",
+          "Write 5 master content templates",
+          "Make text 100% unique to prevent duplicate issues",
+          "Add 20 dynamic variables to content",
+          "Complex dynamic internal linking structure",
+          "Dynamic Featured Snippet optimization",
+          "Fix server crawl budget waste issues",
+          "A/B test 2 page templates for better clicks",
+          "Advanced Google indexation strategies",
+          "Monthly ROI & traffic dashboard report"
+        ]
+      },
+      {
+        "tierName": "Enterprise",
+        "price": "₹85,000+",
+        "duration": "/ Month",
+        "target": "⚡ Large Platforms",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Find 5000+ long-tail programmatic keywords",
+          "Group keywords into unlimited clusters",
+          "Design 15+ SEO-friendly page templates",
+          "Enterprise data mapping for programmatic SEO",
+          "Generate 5000+ programmatic web pages",
+          "AI-generated unique paragraphs per page",
+          "100% duplicate content penalty proofing",
+          "Multi-language programmatic pages (3 languages)",
+          "Real-time inventory or data synchronization",
+          "Automated internal linking silo creation",
+          "Edge-caching setup for instant page loading",
+          "Consulting on CMS programmatic integration",
+          "Continuous indexation & ranking monitoring",
+          "Dedicated Database SEO expert",
+          "Custom programmatic scale dashboard"
+        ]
+      }
+    ]
+  },
+  {
+    "num": "06",
+    "title": "E-Commerce Optimization",
+    "subtitle": "Destroy faceted navigation crawl traps, fix out-of-stock SEO bleeding, and recover lost\n                            product revenue.",
+    "tiers": [
+      {
+        "tierName": "Starter",
+        "price": "₹10,000",
+        "duration": "/ Month",
+        "target": "🛒 Lost Products",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Optimize 20 Core Product pages",
+          "Optimize 5 Main Category pages",
+          "Write 20 Product Meta Titles",
+          "Write 20 Product Meta Descriptions",
+          "Add basic Product Schema for rich results",
+          "Fix 10 broken product or cart links",
+          "Compress 50 heavy product images",
+          "Setup Google Merchant Center account",
+          "Add 50 internal links between products",
+          "Provide 1 Monthly Sales/Traffic report"
+        ]
+      },
+      {
+        "tierName": "Growth",
+        "price": "₹25,000",
+        "duration": "/ Month",
+        "target": "🛒 Crawl Budget Waste",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Optimize 100 Core Product pages",
+          "Optimize 20 Main Category pages",
+          "Write 100 Product Meta Titles",
+          "Write 100 Product Meta Descriptions",
+          "Add Review & Price Schema to products",
+          "Fix 50 broken product or cart links",
+          "Compress 200 heavy product images",
+          "Fix basic filter (size/color) SEO issues",
+          "Optimize 1 Google Shopping Feed",
+          "Add \"Customers also bought\" internal links",
+          "Track 50 product-specific keywords",
+          "Provide Bi-weekly Sales & Traffic report"
+        ]
+      },
+      {
+        "tierName": "Advanced",
+        "price": "₹48,000",
+        "duration": "/ Month",
+        "target": "🛒 Severe Filter Issues",
+        "isPopular": true,
+        "popularBadge": "Max Revenue",
+        "deliverables": [
+          "Optimize 300 Core Product pages",
+          "Optimize 50 Main Category pages",
+          "Bulk update Meta Titles & Descriptions",
+          "Add Advanced Video & UGC Schema",
+          "Fix SEO errors for out-of-stock items",
+          "Compress 1000 heavy product images",
+          "Fix deep filter/category crawl traps",
+          "Fix Price/Size sorting URL duplication",
+          "Optimize 3 Google Shopping Feeds",
+          "Write 10 Product Buying Guide blog posts",
+          "Track 200 product-specific keywords",
+          "Track competitor product pricing changes",
+          "Recover abandoned cart SEO traffic",
+          "WhatsApp E-commerce strategy support"
+        ]
+      },
+      {
+        "tierName": "Enterprise",
+        "price": "₹80,000+",
+        "duration": "/ Month",
+        "target": "🛒 Mass SKU Catalogs",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Optimize 1000+ Core Product pages",
+          "Optimize 200+ Main Category pages",
+          "Bulk AI-assisted product description templates",
+          "Enterprise Product Schema integration",
+          "Full website filter/navigation redesign",
+          "Multi-currency & Multi-language SEO setup",
+          "Optimize 10+ Google Shopping Feeds",
+          "Write 30 Product Buying Guide blog posts",
+          "Track 1000+ product-specific keywords",
+          "Automated out-of-stock product redirects",
+          "Automated seasonal category page creation",
+          "Customer Review (UGC) SEO integration",
+          "Conversion Rate Optimization (CRO) audit",
+          "Dedicated E-commerce SEO Manager",
+          "Advanced E-commerce Revenue Dashboard"
+        ]
+      }
+    ]
+  },
+  {
+    "num": "07",
+    "title": "Enterprise Governance",
+    "subtitle": "Mitigate high-risk site migrations, solve cross-domain cannibalization, and establish strict\n                            algorithmic defense.",
+    "tiers": [
+      {
+        "tierName": "Starter",
+        "price": "₹25,000",
+        "duration": "/ Month",
+        "target": "🏢 Internal Conflicts",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Audit 1 main enterprise domain",
+          "Check sub-domain linking errors",
+          "Setup Google Analytics 4 (GA4) properly",
+          "Setup Google Search Console properly",
+          "Create a basic SEO rulebook for staff",
+          "Train 1 in-house writer on SEO basics",
+          "Check 50 key URLs for indexing issues",
+          "Find and fix 10 duplicate content issues",
+          "Hold 1 Monthly team sync video call",
+          "Provide 1 Basic Looker Studio dashboard"
+        ]
+      },
+      {
+        "tierName": "Growth",
+        "price": "₹45,000",
+        "duration": "/ Month",
+        "target": "🏢 Migration Risks",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Audit up to 3 enterprise domains",
+          "Fix sub-domain keyword cannibalization",
+          "Setup GA4 cross-domain tracking",
+          "Create SEO checklist for Web Developers",
+          "Train 3 in-house staff members on SEO",
+          "Check 500 key URLs for indexing issues",
+          "Find and fix 50 duplicate content issues",
+          "Plan basic risk-free website migration",
+          "Setup automated site error email alerts",
+          "Hold Bi-weekly team sync video calls",
+          "Provide Advanced Looker Studio dashboard",
+          "Perform SEO QA before developer code pushes"
+        ]
+      },
+      {
+        "tierName": "Advanced",
+        "price": "₹70,000",
+        "duration": "/ Month",
+        "target": "🏢 Large Consolidations",
+        "isPopular": true,
+        "popularBadge": "Corporate Standard",
+        "deliverables": [
+          "Audit up to 10 enterprise domains",
+          "Consolidate 3 dying domains into main site",
+          "Full GA4/GTM custom click event tracking",
+          "Create strict SEO SOPs for entire company",
+          "Train marketing & dev teams on SEO",
+          "Fix deep log-file crawl budget errors",
+          "Plan large-scale website migration securely",
+          "Setup real-time Slack/Email error alerts",
+          "Hold Weekly team sync video calls",
+          "Custom C-Suite reporting dashboard",
+          "Perform SEO QA for all staging servers",
+          "Hreflang multi-language setup for 5 countries",
+          "Build traffic drop recovery strategy",
+          "Direct WhatsApp group with your CTO"
+        ]
+      },
+      {
+        "tierName": "Enterprise",
+        "price": "₹120,000+",
+        "duration": "/ Month",
+        "target": "🏢 Fortune 500 Risks",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Audit 20+ global enterprise domains",
+          "Consolidate massive domain portfolios safely",
+          "Advanced GA4 & Search Console data mapping",
+          "Create interactive SEO Wiki for company",
+          "Train 50+ global staff members on SEO",
+          "Advanced server-side & caching SEO guidance",
+          "Flawless zero-drop migration execution",
+          "Advanced traffic drop prediction modeling",
+          "Daily team sync video calls available",
+          "Executive C-Suite Revenue tracking dashboard",
+          "Build automated SEO QA testing scripts",
+          "Hreflang setup for 50+ global countries",
+          "Penetration testing for SEO security",
+          "Dedicated Enterprise SEO Director",
+          "Quarterly in-person board meetings"
+        ]
+      }
+    ]
+  },
+  {
+    "num": "08",
+    "title": "Digital PR & Brand Authority",
+    "subtitle": "Hijack competitor news cycles, suppress negative PR, and secure elite publication authority.",
+    "tiers": [
+      {
+        "tierName": "Starter",
+        "price": "₹8,000",
+        "duration": "/ Month",
+        "target": "📢 Brand Obscurity",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Write 1 Professional Press Release (PR)",
+          "Distribute PR to 20 news websites",
+          "Find 10 unlinked mentions of your brand",
+          "Send 20 outreach emails to journalists",
+          "Setup Google Alerts for brand monitoring",
+          "Pitch 2 HARO answers for news features",
+          "Update 5 social media bios for SEO",
+          "Secure 2 Guaranteed Brand mentions",
+          "Provide 1 Monthly brand tracking report",
+          "Hold 1 PR Strategy video call"
+        ]
+      },
+      {
+        "tierName": "Growth",
+        "price": "₹20,000",
+        "duration": "/ Month",
+        "target": "📢 Lost Mentions",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Write 3 Professional Press Releases",
+          "Distribute PR to 50 news websites",
+          "Find 30 unlinked mentions of your brand",
+          "Send 100 outreach emails to journalists",
+          "Hijack 5 competitor news trends",
+          "Pitch 10 HARO answers for news features",
+          "Update 15 social media bios for SEO",
+          "Secure 5-8 Guaranteed Brand mentions",
+          "Apply for 2 Industry Business Awards",
+          "Create 1 Data-driven PR infographic",
+          "Provide Bi-weekly brand tracking report",
+          "Hold 2 PR Strategy video calls"
+        ]
+      },
+      {
+        "tierName": "Advanced",
+        "price": "₹42,000",
+        "duration": "/ Month",
+        "target": "📢 PR Defense",
+        "isPopular": true,
+        "popularBadge": "Crisis & Leadership",
+        "deliverables": [
+          "Write 6 Professional Press Releases",
+          "Distribute PR to 200 news websites",
+          "Find 100 unlinked mentions of your brand",
+          "Send 300 outreach emails to journalists",
+          "Hijack 20 competitor news trends",
+          "Pitch 30 HARO answers for news features",
+          "Secure 15-20 Guaranteed Brand mentions",
+          "Apply for 5 Industry Business Awards",
+          "Create 3 Data-driven PR infographics",
+          "Pitch CEO story to 10 Industry Podcasts",
+          "Targeted outreach to secure Podcast interviews",
+          "Secure 2 Guest author columns in magazines",
+          "Create Crisis PR management defense plan",
+          "Direct WhatsApp PR strategy group"
+        ]
+      },
+      {
+        "tierName": "Enterprise",
+        "price": "₹75,000+",
+        "duration": "/ Month",
+        "target": "📢 Market Shaping",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Write 12+ Professional Press Releases",
+          "Targeted pitches to Tier-1 industry publications",
+          "Find 300+ unlinked mentions of your brand",
+          "Send 1000+ outreach emails to journalists",
+          "Execute daily competitor newsjacking strategy",
+          "Pitch 100+ HARO answers for news features",
+          "Secure 50+ Premium Brand mentions",
+          "Apply for 15 Industry Business Awards",
+          "Create 10 Data-driven PR infographics",
+          "Pitch CEO story to 50 Industry Podcasts",
+          "Aggressive podcast outreach for executive features",
+          "Secure 5 Guest author columns in magazines",
+          "Priority Crisis PR execution and defense",
+          "Dedicated Digital PR Outreach Manager",
+          "Advanced PR & Media tracking dashboard"
+        ]
+      }
+    ]
+  },
+  {
+    "num": "09",
+    "title": "Parasite SEO & Syndication",
+    "subtitle": "Weaponize high-DA platforms to suppress negative search results and hijack competitor intent.",
+    "tiers": [
+      {
+        "tierName": "Starter",
+        "price": "₹6,000",
+        "duration": "/ Month",
+        "target": "🦠 Weak SERP Control",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Create 1 Medium author account",
+          "Publish 2 optimized articles on Medium",
+          "Create 1 Quora expert account",
+          "Answer 5 targeted Quora questions",
+          "Create 1 Reddit brand account",
+          "Post in 2 niche Subreddits",
+          "Create 1 LinkedIn brand Newsletter",
+          "Publish 2 LinkedIn articles",
+          "Add 10 backlinks to main website",
+          "Provide Monthly Parasite rank report"
+        ]
+      },
+      {
+        "tierName": "Growth",
+        "price": "₹16,000",
+        "duration": "/ Month",
+        "target": "🦠 High Competition",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Create 3 Medium author accounts",
+          "Publish 5 optimized articles on Medium",
+          "Create 3 Quora expert accounts",
+          "Answer 15 targeted Quora questions",
+          "Create 3 Reddit brand accounts",
+          "Post in 10 niche Subreddits",
+          "Publish 5 LinkedIn articles",
+          "Publish 2 articles on Dev.to (for tech)",
+          "Add 30 backlinks to main website",
+          "Track 10 Parasite SEO keywords",
+          "Rank 2 parasite pages on Google Page 1",
+          "Provide Bi-weekly Parasite rank report"
+        ]
+      },
+      {
+        "tierName": "Advanced",
+        "price": "₹35,000",
+        "duration": "/ Month",
+        "target": "🦠 Reputation Defense",
+        "isPopular": true,
+        "popularBadge": "SERP Takeover",
+        "deliverables": [
+          "Publish 15 articles on Medium/Vocal",
+          "Answer 40 targeted Quora questions",
+          "Post engaging content in 30 Subreddits",
+          "Publish 15 LinkedIn articles",
+          "Publish 10 articles on Dev.to/Hashnode",
+          "Add 100 backlinks to main website",
+          "Strategic brand placement on authority directories",
+          "Advanced user engagement signal optimization",
+          "Build 50 Tier-2 links to parasite pages",
+          "Track 40 Parasite SEO keywords",
+          "Rank 10 parasite pages on Google Page 1",
+          "Suppress 2 negative Google search results",
+          "Provide Monthly Parasite ROI report",
+          "Direct WhatsApp strategy support"
+        ]
+      },
+      {
+        "tierName": "Enterprise",
+        "price": "₹65,000+",
+        "duration": "/ Month",
+        "target": "🦠 Market Domination",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Publish 50+ articles on Medium/Vocal",
+          "Answer 150+ targeted Quora questions",
+          "Post engaging content in 100+ Subreddits",
+          "Publish 50+ LinkedIn articles",
+          "Publish 30+ articles on niche forums",
+          "Add 300+ backlinks to main website",
+          "Multiple brand placements on authority directories",
+          "Aggressive user engagement signal optimization",
+          "Build 200+ Tier-2 links to parasite pages",
+          "Track 150+ Parasite SEO keywords",
+          "Rank 30+ parasite pages on Google Page 1",
+          "Suppress 10 negative Google search results",
+          "Aggressive strategy to dominate branded search results",
+          "Dedicated Parasite SEO Network Manager",
+          "Advanced Content Syndication Dashboard"
+        ]
+      }
+    ]
+  },
+  {
+    "num": "10",
+    "title": "Strategic Penalty Audits",
+    "subtitle": "Identify exactly where your revenue is leaking, diagnose algorithm penalties, and build the\n                            recovery roadmap.",
+    "tiers": [
+      {
+        "tierName": "Starter",
+        "price": "₹9,000",
+        "duration": "/ One Time",
+        "target": "🔍 Quick Diagnostics",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Check 50 technical SEO website points",
+          "Check Google Penalty status",
+          "Find 5 main website ranking errors",
+          "Check profile for 20 toxic spam backlinks",
+          "Compare website with 2 main competitors",
+          "Find 10 missing profitable keywords",
+          "Check robots.txt file configuration",
+          "Check sitemap.xml configuration",
+          "Deliver a 30-Day Action Plan PDF",
+          "Provide 1 Hour Video Call to explain audit"
+        ]
+      },
+      {
+        "tierName": "Growth",
+        "price": "₹22,000",
+        "duration": "/ One Time",
+        "target": "🔍 Traffic Drops",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Check 150 technical SEO website points",
+          "Deep dive Google Algorithm Penalty check",
+          "Find 20 main website ranking errors",
+          "Check profile for 100 toxic spam backlinks",
+          "Create Disavow file to remove spam links",
+          "Compare website with 5 main competitors",
+          "Find 50 missing profitable keywords",
+          "Check for Content Keyword Cannibalization",
+          "Check exact Page Loading Speed issues",
+          "Deliver a 90-Day Action Plan PDF",
+          "Provide 2 Hour Video Call to explain audit",
+          "1 Month of Email Support for questions"
+        ]
+      },
+      {
+        "tierName": "Advanced",
+        "price": "₹45,000",
+        "duration": "/ One Time",
+        "target": "🔍 Algorithmic Penalty",
+        "isPopular": true,
+        "popularBadge": "Board-Ready Strategy",
+        "deliverables": [
+          "Check 250 technical SEO website points",
+          "Reverse engineer exact Google Penalty cause",
+          "Find all website indexing and crawl errors",
+          "Check profile for 500 toxic spam backlinks",
+          "Create & submit Disavow file to Google",
+          "Compare website with 10 main competitors",
+          "Find 200 missing profitable keywords",
+          "Provide Full Content Gap Analysis spreadsheet",
+          "Deep Server Log Analysis for crawl waste",
+          "JavaScript Rendering SEO Audit",
+          "Provide ROI & Traffic Projection PDF Model",
+          "Deliver a 180-Day Action Plan PDF",
+          "Provide 3 Hour Video Call to explain audit",
+          "1 Month of WhatsApp Support for questions"
+        ]
+      },
+      {
+        "tierName": "Enterprise",
+        "price": "₹85,000+",
+        "duration": "/ One Time",
+        "target": "🔍 M&A / Scaling",
+        "isPopular": false,
+        "popularBadge": null,
+        "deliverables": [
+          "Check 400+ technical SEO website points",
+          "Recover site from severe Algorithm Penalty",
+          "Fix complete website URL architecture",
+          "Audit 10,000+ enterprise backlink profile",
+          "Create daily toxic link removal defense plan",
+          "Compare website with 20 global competitors",
+          "Find 1000+ missing profitable keywords",
+          "Full M&A (Merger) SEO Due Diligence audit",
+          "Run advanced automated website audits",
+          "Advanced predictive competitor threat analysis",
+          "Provide ROI & Traffic Projection Excel Model",
+          "Deliver a 12-Month Scaling Action Plan PDF",
+          "Full-day In-Person or Video Team Workshop",
+          "Dedicated Technical Audit Project Manager",
+          "3 Months of WhatsApp Support for questions"
+        ]
+      }
+    ]
+  }
+];
+
+export const seoCombos = [
+  {
+    "name": "Startup SEO 🚀",
+    "price": "₹15K",
+    "duration": "/mo",
+    "isPopular": false,
+    "popularBadge": null,
+    "features": [
+      "Target 10 highly profitable keywords",
+      "Fully optimize 10 main website pages",
+      "Write 10 custom Meta Titles & Descriptions",
+      "Fix H1/H2 heading tags for 10 pages",
+      "Add 20 strategic internal links",
+      "Write SEO alt text for 20 images",
+      "Build 20 High DA safe backlinks",
+      "Secure 2 Guest Posts on real blogs",
+      "Setup 1 Google My Business profile",
+      "Create 4 GMB update posts per month",
+      "Submit to 15 Local Business Directories",
+      "Check website for 50 technical errors",
+      "Fix 5 broken 404 error links",
+      "Setup Google Analytics & Search Console",
+      "Create XML Sitemap & Robots.txt file",
+      "Improve website loading speed basics",
+      "Add basic Schema markup to homepage",
+      "Check 1 competitor's SEO strategy",
+      "Provide Monthly Keyword Ranking Report",
+      "Provide Monthly Backlink & Traffic Report"
+    ]
+  },
+  {
+    "name": "Growth SEO 📈",
+    "price": "₹30K",
+    "duration": "/mo",
+    "isPopular": false,
+    "popularBadge": null,
+    "features": [
+      "Target 25 highly profitable keywords",
+      "Fully optimize 25 main website pages",
+      "Write 25 custom Meta Titles & Descriptions",
+      "Fix H1/H2/H3 tags for 25 pages",
+      "Add 50 strategic internal links",
+      "Write SEO alt text for 50 images",
+      "Build 40 High DA safe backlinks",
+      "Secure 4 Premium Guest Posts",
+      "Secure 2 Niche Edit backlinks",
+      "Setup & manage up to 2 GMB profiles",
+      "Create 8 GMB update posts per month",
+      "Submit to 30 Local Business Directories",
+      "Fix keyword cannibalization issues",
+      "Add E-E-A-T trust signals to content",
+      "Check website for 100+ technical errors",
+      "Fix 15 broken 404 error links",
+      "Fix 5 redirect loop chains",
+      "Improve load speed under 3 seconds",
+      "Add Advanced Schema markup to 5 pages",
+      "Check 3 competitors' SEO strategies",
+      "Fix basic Google Indexing errors",
+      "Provide Bi-weekly Keyword Ranking Report",
+      "Provide Bi-weekly Backlink & Traffic Report",
+      "1 Hour Monthly Strategy Video Call"
+    ]
+  },
+  {
+    "name": "Advanced SEO 👑",
+    "price": "₹45K",
+    "duration": "/mo",
+    "isPopular": true,
+    "popularBadge": "Market Dominator",
+    "features": [
+      "Target 50 highly profitable keywords",
+      "Fully optimize 50 main website pages",
+      "Write 50 custom Meta Titles & Descriptions",
+      "Build complete Internal Linking Silo structure",
+      "Add 100+ strategic internal links",
+      "Write SEO alt text for 100+ images",
+      "Build 80 Premium High DA backlinks",
+      "Secure 8 Premium Guest Posts",
+      "Secure 5 High-traffic Niche Edits",
+      "Manage up to 5 GMB branch profiles",
+      "Create 15 GMB update posts per month",
+      "Setup Automated Customer Review Funnel",
+      "Optimize 5 pages for Google Featured Snippets",
+      "Merge or delete 5 thin/useless pages",
+      "Check website for 200+ technical errors",
+      "Disavow up to 50 toxic spam links",
+      "Setup Cloudflare CDN for fast loading",
+      "Improve load speed under 2 seconds",
+      "Add exact Schema markup for 15 pages",
+      "Deep Server log analysis for crawl errors",
+      "Track 5 competitors' exact SEO strategies",
+      "Find 50 missing keyword content gaps",
+      "Create 5 SEO optimized blog posts per month",
+      "Publish 5 articles on Medium/LinkedIn",
+      "Detailed Weekly Ranking & Traffic Reports",
+      "Direct WhatsApp group for fast support",
+      "2 Hour Monthly Strategy Video Call"
+    ]
+  },
+  {
+    "name": "Enterprise SEO 🏢",
+    "price": "₹60K+",
+    "duration": "/mo",
+    "isPopular": false,
+    "popularBadge": null,
+    "features": [
+      "Target 100+ highly profitable keywords",
+      "Fully optimize 100+ main website pages",
+      "Bulk write/update Meta Titles & Descriptions",
+      "A/B test 10 Meta Titles for better clicks",
+      "Add 300+ automated/manual internal links",
+      "Build 150+ Premium High DA backlinks",
+      "Secure 15 Premium Guest Posts",
+      "Secure 10 High-traffic Niche Edits",
+      "Pitch 10 HARO answers for news links",
+      "Steal 20 high-value competitor backlinks",
+      "Manage 10+ GMB franchise profiles",
+      "Report & remove fake competitor GMB maps",
+      "Optimize 15 pages for Google Featured Snippets",
+      "Write 10 SEO optimized blog posts per month",
+      "Rewrite & refresh 10 old dead blog posts",
+      "Weekly spam link checking and removal",
+      "Audit 1000+ pages for massive technical errors",
+      "Advanced server speed & caching optimization",
+      "Fix multi-domain indexing & cannibalization",
+      "Full multi-language On-page SEO setup",
+      "Dynamic automated Schema generation setup",
+      "Real-time Google crawl budget tracking",
+      "Setup GA4 cross-domain tracking properly",
+      "Publish 15 articles on Medium/LinkedIn",
+      "Post in 10 niche Reddit communities",
+      "Advanced user engagement signal optimization",
+      "Dedicated All-in-One SEO Project Manager",
+      "Advanced Looker Studio Traffic Dashboard",
+      "Direct WhatsApp group with your CTO",
+      "Weekly Strategy Video Calls & Consulting"
+    ]
+  }
+];

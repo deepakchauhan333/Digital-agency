@@ -13,13 +13,19 @@ const services = [
 ];
 
 const company = [
+  { name: "Pricing", href: "/pricing" },
   { name: "About Us", href: "/about" },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },
-  { name: "Privacy", href: "/privacy" },
-  { name: "Terms", href: "/terms" },
   { name: "Contact", href: "/contact" },
   { name: "Sitemap", href: "/sitemap-html" },
+];
+
+const legal = [
+  { name: "Privacy Policy", href: "/privacy" },
+  { name: "Terms & Conditions", href: "/terms" },
+  { name: "Refund Policy", href: "/refund-policy" },
+  { name: "Disclaimer", href: "/disclaimer" },
 ];
 
 export default function Footer() {
@@ -77,6 +83,18 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Legal Column */}
+        <div className={styles.column}>
+          <h4 className={styles.columnTitle}>Legal</h4>
+          <ul className={styles.columnList}>
+            {legal.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href}>{l.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Contact Column */}
         <div className={styles.column}>
           <h4 className={styles.columnTitle}>Get In Touch</h4>
@@ -93,10 +111,12 @@ export default function Footer() {
 
       <div className={styles.bottom}>
         <div className={styles.bottomInner}>
-          <p>© 2026 DigitalGrowPedia. All rights reserved.</p>
+          <p>© 2026 DigitalGrowPedia. All rights reserved. | Jaipur, Rajasthan, India</p>
           <div className={styles.bottomLinks}>
             <Link href="/privacy">Privacy Policy</Link>
-            <Link href="/terms">Terms of Service</Link>
+            <Link href="/terms">Terms &amp; Conditions</Link>
+            <Link href="/refund-policy">Refund Policy</Link>
+            <Link href="/disclaimer">Disclaimer</Link>
           </div>
         </div>
       </div>
